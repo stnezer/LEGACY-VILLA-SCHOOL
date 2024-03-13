@@ -1,21 +1,102 @@
+/*universal style*/
 *{
-    background-color: rgb(252  , 252, 100);
+/*    background-color: rgb(252  , 252, 100);*/
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    
 }
+
+/*header*/
 
 #headdiv{
-    background-color: black;
+
     width: 100%;
-    height: 60px;
+    height: 70px;
 }
+
+/*top div in the header*/
 
 #navOne {
-    background-color: rgb(13, 13   , 210);
-    height: 20px;
+    background-color: rgba(126, 170, 250, 0.788);
+
+    height: 30px;
     width: 100%;
-    color: yellow;
-    display: inline-block
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 100px;
+    padding-left: 50px;
+
 }
 
+/*anchor tag in the top-div 'in header*/
+
+#navOne div a{
+    display: inline-flex;
+    margin: 5px auto;
+    text-decoration: none;
+    padding-right: 10px;
+    color: white;
+    
+
+}
+
+/*icons style with general class*/
+
+.fa {
+    color: white;
+    margin-right: 10px;
+    
+}
+
+/*second div in the header*/
+
+#navTwo {
+    background-color: rgba(28, 4, 167, 0.849);
+    color: white;
+    height: 40px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*second div in the header tag */
+
+#logo {
+    padding-left: 100px;
+
+}
+#logo img {
+    width: 30px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+#navLink {
+    margin-right: 250px;
+}
+
+#navLink a {
+    text-decoration: none;
+    color: white;
+    margin-right: 40px;
+    font-size: smaller;
+    font-weight: bold;
+}
+
+/*MAIN SECTION STYLING*/
+
+#homePage {
+    background-image: url("/legacydocs/IMG_2580.jpg");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(to top, rgba(128, 139, 196, 0.8), rgba(0, 0, 255, 0.5));
+    height: 88.3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
