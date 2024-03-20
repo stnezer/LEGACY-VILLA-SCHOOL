@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'poppins'; */
+}
+
+/* About section starts here */
+.about_container{
+    height:100vh;
+    
+}
+
+.about_txt{
+    width:300px;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid rgba(54, 63, 140, 100%);
+    margin: 20px auto;
+}
+
+.about_vision_and_mision_text{
+    margin-top: 50px;
+}
+.about_vision_and_mision_text h3::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color:rgba(54, 63, 140, 100%);
+    margin-top: 7px;
+}
+
+.vision_text h3{
+    margin-top: 50px;
+}
+.about_video_container{
+   width:250px;
+   position:relative;
+   margin-top:30px ;
+   
+}
+
+.about_video_container img{
+    width: 100%;
+    height:auto;
+    border: 4px solid rgba(54, 63, 140, 100%);
+}
+
+.About_text_video_flex{
+    display: flex;
+    justify-content:space-around;
+}
+.about_img_name{
+    width:243px;
+    height:40px;
+    background: rgba(225,225,225,0.5);
+    position:absolute;
+    top:85.5%;
+    right:3px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* About section Responsiveness*/
+@media screen and (max-width: 768px) {
+    .about_container {
+        padding: 20px;
+        /* height:100%; */
+    }
+
+    .about_txt {
+        width: 50%;
+    }
+
+    .about_vision_and_mision_text {
+        margin-top: 50px;
+    }
+
+    .about_vision_and_mision_text h3::after {
+        margin-top: 5px;
+    }
+
+    .vision_text h3 {
+        margin-top: 30px;
+    }
+
+    .About_text_video_flex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_video_container {
+        margin-top: 30px;
+    }
+
+    .about_img_name {
+        top: auto;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+
+/* Staff section starts here*/
+.staff_container{
+    height: 100vh;
+    margin-top: 20px;
+}
+
+.staff_container h2{
+    font-size: larger;
+    text-align: center;
+}
+.staff_container .staff_text_box{
+    width:700px;
+    height:50px;
+    background-color: rgba(54, 63, 140, 66%);
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px auto;
+}
+.staff_img1, .staff_img2, .staff_img3{
+    width:350px;
+    height: 430px;
+    margin: 5px;
+}
+
+.staff_img1 img, .staff_img2 img, .staff_img3 img{
+    width: 100%;
+    height:100%;
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius:10px ;
+    
+    
+}
+
+.staff_images{
+    display:flex;
+    justify-content:center;
+    position: relative;
+}
+.staff_img1_name, .staff_img2_name, .staff_img3_name{
+    width:350px;
+    height:40px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(54, 63, 140, 100%);
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius:10px;
+    position:absolute;
+    bottom:0px;
+}
+.staff_slider1 img{
+    color:white;
+    background-color: aqua;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+
+.staff_img1, .staff_img2, .staff_img3 {
+    position: relative;
+}
+
+.staff_img1::after, .staff_img2::after, .staff_img3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius:10px ;
+    background: linear-gradient(rgba(54, 63, 140, 0.16), rgba(54, 63, 140, 0.16));
+}
+
+.staff_slider1, .staff_slider2{
+    width:50px;
+    height:50px;
+    border-radius: 50px;
+    position:absolute;
+    top:40%;
+    color:white;
+    background:rgba(217, 217, 217, 64%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.staff_slider1{
+    left:10%;
+}
+
+.staff_slider2{
+    right:10%;
+}
+
+@media screen and (max-width: 768px) {
+    .staff_container {
+        margin-top: 10px;
+
+        .staff_text_box{
+            width:70%;
+            text-align: center;
+            margin:5px auto;
+        }
+        .staff_images{
+            flex-direction: column;
+        }
+        .staff_img1, .staff_img2, .staff_img3{
+            width:300px;
+            height: 300px;
+            margin:50px auto;
+        }
+        .staff_img1 img, .staff_img2 img, .staff_img3 img{
+            width:100%;
+            height:100%;
+        }
+        .staff_img1_name, .staff_img2_name, .staff_img3_name{
+            width:300px
+        }
+        .staff_slider1,  .staff_slider2{
+            display:none;
+        }
+    }
+}
