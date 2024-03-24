@@ -7,13 +7,6 @@
     
 }
 
-/*GOOGLE FONT*/
-
-
-
-
-
-  
 /*header*/
 
 #headdiv {
@@ -100,8 +93,7 @@
 #homePage {
     
     background: linear-gradient(to bottom, rgba(12, 1, 39, 1), rgba(27, 3, 240, 0.7));
-    background-image: url("./legacydocs/LVSEXPOSURE2dark.jpg");
-    
+    background-image: url("./others/LVSEXPOSURE2dark.jpg");
     background-position: cover;
     background-size: 100% 88vh;
     background-repeat: no-repeat;
@@ -139,7 +131,10 @@
 /* About section starts here */
 .about_container{
     height:100vh;
+    /* background-color: blue; */
+    padding-top: 30px;
     
+      
 }
 
 .about_txt{
@@ -150,10 +145,12 @@
     align-items: center;
     border: 4px solid rgba(54, 63, 140, 100%);
     margin: 20px auto;
+    /* background-color: red; */
 }
 
 .about_vision_and_mision_text{
     margin-top: 50px;
+    /* background-color: yellow; */
 }
 .about_vision_and_mision_text h3::after {
     content: "";
@@ -170,20 +167,26 @@
 .about_video_container{
    width:250px;
    position:relative;
-   margin-top:30px ;
+   margin-top:30px;
+   background-color: green;
    
 }
+
+
 
 .about_video_container img{
     width: 100%;
     height:auto;
-    border: 4px solid rgba(54, 63, 140, 100%);
-}
+    /* border: 4px solid rgba(54, 63, 140, 100%); */
+} 
 
 .About_text_video_flex{
     display: flex;
     justify-content:space-around;
+
+
 }
+/* video container style */
 .about_img_name{
     width:243px;
     height:40px;
@@ -193,7 +196,50 @@
     right:3px;
     text-align: center;
     justify-content: center;
+
 }
+
+/* video Stylling */
+
+.video-container {
+    /* padding: 0; */
+    position: relative;
+    width: 310px;
+    height:auto;
+    border: 4px solid rgba(54, 63, 140, 100%);
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius:10px;
+}
+
+#vPayer{
+
+    background-color: red;
+    padding: 0;
+    margin: 0;
+    width: 280px;
+
+}
+.video-text {
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+             */
+            font-size: 24px;
+            text-align: center;
+            width:300px;
+            height:50px;
+            color:white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:rgba(54, 63, 140, 100%);
+            border-bottom-left-radius:10px ;
+            border-bottom-right-radius:10px;
+}
+
+
 
 /* About section Responsiveness*/
 @media screen and (max-width: 768px) {
@@ -240,18 +286,28 @@
 
 
 /* Staff section starts here*/
+
 .staff_container{
+    width: 100vw;
     height: 100vh;
-    margin-top: 20px;
+    /* background-color: red; */
+    padding-top: 10px;
+    
 }
 
 .staff_container h2{
-    font-size: larger;
+    margin-top: 20px;
+    padding: 20px;
+    /* background-color: black; */
+    /* display: flex; */
+    font-size: 30px;
     text-align: center;
+    /* color: white; */
 }
 .staff_container .staff_text_box{
     width:700px;
     height:50px;
+    padding: 10px;
     background-color: rgba(54, 63, 140, 66%);
     color:white;
     display: flex;
@@ -259,28 +315,32 @@
     align-items: center;
     margin:20px auto;
 }
-.staff_img1, .staff_img2, .staff_img3{
-    width:350px;
-    height: 430px;
-    margin: 5px;
+.staffs{
+    width: 240px;
+    height: 240px;
+    margin: 10px;
+    /* padding: 5px; */
+    background-color: blue;
+    border-radius: 50%;
 }
 
-.staff_img1 img, .staff_img2 img, .staff_img3 img{
-    width: 100%;
-    height:100%;
-    border-bottom-left-radius:10px ;
-    border-bottom-right-radius:10px ;
-    
-    
+.staffs img{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
+
 
 .staff_images{
     display:flex;
-    justify-content:center;
-    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-evenly;
+    /* position: relative; */
 }
-.staff_img1_name, .staff_img2_name, .staff_img3_name{
-    width:350px;
+.name{
+    width:250px;
     height:40px;
     color:white;
     display: flex;
@@ -289,18 +349,12 @@
     background:rgba(54, 63, 140, 100%);
     border-bottom-left-radius:10px ;
     border-bottom-right-radius:10px;
-    position:absolute;
-    bottom:0px;
-}
-.staff_slider1 img{
-    color:white;
-    background-color: aqua;
-    width:50px;
-    height:50px;
-    border-radius: 50%;
+    /* position:absolute;
+    bottom:0px; */
 }
 
-.staff_img1, .staff_img2, .staff_img3 {
+
+/* .staff_img1, .staff_img2, .staff_img3 {
     position: relative;
 }
 
@@ -335,7 +389,7 @@
 
 .staff_slider2{
     right:10%;
-}
+} */
 
 @media screen and (max-width: 768px) {
     .staff_container {
