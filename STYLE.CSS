@@ -6,6 +6,13 @@
     margin: 0;
     
 }
+body{
+    font-family: "Poppins";
+}
+
+/*GOOGLE FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+
 
 /*header*/
 
