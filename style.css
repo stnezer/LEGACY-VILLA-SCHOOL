@@ -139,7 +139,7 @@ body{
 /* About section starts here */
 
 #about_container{
-    height:100vh;
+    height:100%;
     /* background-color: blue; */
     padding: 10px;
     background: linear-gradient(to bottom, rgba(54, 63, 140, 0), rgba(16, 3, 129, 0.3));
@@ -148,13 +148,13 @@ body{
 }
 
 .about_txt{
-    width: 300px;
+    width: 22%;
     height:50px;
     display:flex;
     justify-content: center;
     align-items: center;
     border: 6px solid rgba(54, 63, 140, 100%);
-    margin: 30px auto;
+    margin: 2.5% auto;
 }
 .about_txt h3 {
     font-size: 20px;
@@ -202,52 +202,21 @@ body{
 }
 
 .statement h3{
-    margin-bottom: 50px;
+    margin-bottom: 9%;
     font-size: 20px;
 }
 .statement p{
-    margin-bottom: 50px;
+    margin-bottom: 8%;
     font-size: 20px;
 }
-.about_video_container{
-   width:250px;
-   position:relative;
-   margin-top:30px;
-   /* background-color: green; */
-   
-}
 
-.about_video_container img{
-    width: 100%;
-    height:auto;
-    /* border: 4px solid rgba(54, 63, 140, 100%); */
-} 
-
-.About_text_video_flex{
-    display: flex;
-    justify-content:space-around;
-
-
-}
-/* video container style */
-.about_img_name{
-    width:243px;
-    height:30px;
-    background: rgba(225,225,225,0.5);
-    position:absolute;
-    top:85.5%;
-    right:3px;
-    text-align: center;
-    justify-content: center;
-
-}
 
 /* video Stylling */
 
 .video-container {
     /* padding: 0; */
     position: relative;
-    width: 312px;
+    width:  23.4%;
     height:auto;
     border: 6px solid rgba(54, 63, 140, 100%);
     border-bottom-left-radius:16px ;
@@ -259,14 +228,14 @@ body{
     /* background-color: red; */
     padding: 0;
     margin: 0;
-    width: 250px;
+    width: 23.4%;
 
 }
 .video-text {
 
             font-size: 20px;
             text-align: center;
-            width:300px;
+            width: 100%;
             height:50px;
             color:white;
             display: flex;
@@ -280,7 +249,7 @@ body{
 /* Staff section starts here*/
 
 #staff_container{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     /* background-color: red; */
     padding-top: 5px;
@@ -288,7 +257,7 @@ body{
 }
 
 #staff_container h2{
-    margin-top: 15px;
+    margin-top: 4%;
     padding: 10px;
     /* background-color: black; */
     /* display: flex; */
@@ -308,7 +277,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:20px auto;
+    margin:2% auto;
 }
 
 .staff_text_box h6 {
@@ -320,13 +289,13 @@ body{
 }
 
 .staffs{
-    width: 200px;
+    width: 15%;
     height: 200px;
-    margin: 5px;
+    margin: 1%;
     /* padding: 5px; */
     background-color: rgba(54, 63, 140, 66%);
     /* border-radius: 50%; */
-    margin: 50px 10px 0px 10px;
+    margin: 3% 1% 0px 1%;
 }
 
 .staffs img{
@@ -347,7 +316,7 @@ body{
     /* position: relative; */
 }
 .name{
-    width:200px;
+    width:100%;
     height:40px;
     color:white;
     display: flex;
@@ -357,13 +326,11 @@ body{
     border-bottom-left-radius:10px ;
     border-bottom-right-radius:10px;
     padding: 10px;
-    /* position:absolute;
-    bottom:0px; */
 }
 
 .name p {
     /* background-color: red; */
-    width: 200px;
+    width: 100%;
     font-size: small;
     display: flex;
     align-items: center;
@@ -374,24 +341,24 @@ body{
 
 #Explore-project-section {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: linear-gradient(to bottom, rgba(54, 63, 140, 0), rgba(16, 3, 129, 0.3));
 }
 
 .primary-project {
-    width: 200px;
-    height: 350px;
+    width: 100%;
+    height: 65%;
     /* padding: 40px; */
     /* border: 4px solid rgba(54, 63, 140, 100%); */
     position: absolute;
-    top: 160px;
+    top: 140px;
     left: 12%;
 
 }
 
 .primary-project video {
-    width: 200px;
+    width: 16%;
     height: 100%;
     max-width: 100%;  /*Ensure image doesn't exceed container width */
     max-height: 100%; /*Ensure image doesn't exceed container height */
@@ -403,8 +370,8 @@ body{
     left: 31%;
     background-color: rgba(16, 3, 129, 0.5);
     color: white;
-    width: 270px;
-    height: 80px;
+    width: 20%;
+    height: 13%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -421,13 +388,13 @@ body{
 }
 
 .pdisplay {
-    width: 220px;
+    width: 16%;
     height: auto;
 
 }
 .projectimg {
-    width: 220px; 
-    height: auto;
+    width: 100%; 
+    height: 100%;
     margin: 0;
     max-width: 100%;  /*Ensure image doesn't exceed container width */
     max-height: 100%; /*Ensure image doesn't exceed container height */
@@ -436,7 +403,7 @@ body{
 
 .project1 {
     position: absolute;
-    top: 50px;
+    top: 52px;
     left: 60%;
     border: 12px solid red;
     z-index: 1;
@@ -479,9 +446,8 @@ body{
     grid-template-rows: repeat(7, 1fr);
     padding: 5px 100px;
     column-gap: 10px;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-
   }
 
   #gallery h1 {
@@ -507,13 +473,13 @@ body{
 }
 
 .vcaption {
-    width: 200px;
+    width: 100%;
     height: auto;
     /* border: 4px solid rgba(54, 63, 140, 100%); */
 }
 
 .vcaption video {
-    width: 200px;
+    width: 100%;
     height: 100%;
     max-width: 100%;  /*Ensure image doesn't exceed container width */
     max-height: 100%; /*Ensure image doesn't exceed container height */
@@ -537,9 +503,10 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    row-gap: 5px; 
+    row-gap: 2px; 
     padding: 10px;
     column-gap: 20px;
+    /* background-color: green; */
 }
 
 .gal {
@@ -582,9 +549,9 @@ body{
 /* FOOTER STYLING */
 
 #footer {
-    height: 50vh;
-    width: 100vw;
-    margin-top:100px;
+    height: 80%;
+    width: 100%;
+    margin-top:20%;
     background: linear-gradient(to top, rgba(54, 63, 140, 0.5), rgba(16, 3, 129, 0.719));
     color: white;
     display: flex;
@@ -595,7 +562,7 @@ body{
 }
 
 .gchild {
-    width: 70vw;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;  
@@ -644,7 +611,7 @@ body{
   content: ' ';
   position: relative;
   /* top: 50%; */
-  left: 10%;
+  left: 50%;
   z-index: 1;
   width: 2px; /* Adjust the width of the line */
   height: 80px; /* Adjust the height/thickness of the line */
@@ -656,7 +623,7 @@ body{
 }
 
 .fggchild p {
-    /* font-size: 15px; */
+    font-size: 12px;
     line-height: 20px;
 }
 .fggchild span {
@@ -682,18 +649,18 @@ body{
 
 .sggchild {
     line-height: 20px;
-    font-size: 12px;
+    font-size: 10px;
 }
 .sggchild1 h2 {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 .sggchild h3 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 /* STYLE OF THE DOWNLINE OF THE FOOTER */
 .schild {
-    width: 100vw;
+    width: 100%;
     height: 10%;
     background-color: lightgray;
     display: flex;
