@@ -4,7 +4,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: Poppins;
+    font-family: "Poppins";
 }
 
 body{
@@ -45,8 +45,7 @@ body{
     text-decoration: none;
     padding-right: 10px;
     color: white;
-    
-
+    font-size: small;
 }
 
 /*icons style with general class*/
@@ -54,6 +53,7 @@ body{
 .fa {
     color: white;
     margin-right: 10px;
+    font-size: small;
     
 }
 
@@ -73,6 +73,7 @@ body{
 
 #logo {
     padding-left: 100px;
+    margin-top: 10px;
 
 }
 #logo img {
@@ -82,14 +83,14 @@ body{
 }
 
 #navLink {
-    margin-right: 250px;
+    margin-right: 200px;
 }
 
 #navLink a {
     text-decoration: none;
     color: white;
-    margin-right: 40px;
-    font-size: smaller;
+    margin-right: 20px;
+    font-size: small;
     font-weight: bold;
 }
 
@@ -100,7 +101,7 @@ body{
     background: linear-gradient(to bottom, rgba(12, 1, 39, 1), rgba(27, 3, 240, 0.7));
     background-image: url("./others/LVSEXPOSURE2dark.jpg");
     background-position: cover;
-    background-size: 100% 88vh;
+    background-size: 100%;
     background-repeat: no-repeat;
     height: 88.3vh;
     display: flex;
@@ -114,23 +115,23 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    line-height: 60px;
-    letter-spacing: 5px;
+    line-height: 45px;
+    letter-spacing: 4px;
     width: 70%;
-    height: 140px;
+    height: 120px;
     border-radius: 30px;
 }
 
 #welcomeNote h1 {
     color:rgba(241, 233, 233, 0.772);
-    font-size: 55px;
+    font-size: 40px;
     text-shadow: 4px 4px 4px rgba(194, 86, 86, 0.5);
     
 }
 
 #welcomeNote p {
     color: white;
-    font-size: 30px;
+    font-size: 22px;
     font-weight: lighter;
 }
 
@@ -140,23 +141,23 @@ body{
 #about_container{
     height:100vh;
     /* background-color: blue; */
-    padding: 30px;
+    padding: 10px;
     background: linear-gradient(to bottom, rgba(54, 63, 140, 0), rgba(16, 3, 129, 0.3));
     display: flex;
     flex-direction: column;
 }
 
 .about_txt{
-    width: 400px;
-    height:70px;
+    width: 300px;
+    height:50px;
     display:flex;
     justify-content: center;
     align-items: center;
-    border: 8px solid rgba(54, 63, 140, 100%);
-    margin: 40px auto;
+    border: 6px solid rgba(54, 63, 140, 100%);
+    margin: 30px auto;
 }
 .about_txt h3 {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .about-content {
@@ -183,7 +184,7 @@ body{
     content: "";
     display: block;
     width: 100%;
-    height: 8px;
+    height: 6px;
     background-color:rgba(54, 63, 140, 100%);
     /* margin: 40px 0px; */
     position: absolute;
@@ -193,7 +194,7 @@ body{
     content: "";
     display: block;
     width: 100%;
-    height: 8px;
+    height: 6px;
     background-color:rgba(54, 63, 140, 100%);
     /* margin: 40px 0px; */
     position: absolute;
@@ -202,7 +203,7 @@ body{
 
 .statement h3{
     margin-bottom: 50px;
-    font-size: 30px;
+    font-size: 20px;
 }
 .statement p{
     margin-bottom: 50px;
@@ -215,8 +216,6 @@ body{
    /* background-color: green; */
    
 }
-
-
 
 .about_video_container img{
     width: 100%;
@@ -233,7 +232,7 @@ body{
 /* video container style */
 .about_img_name{
     width:243px;
-    height:40px;
+    height:30px;
     background: rgba(225,225,225,0.5);
     position:absolute;
     top:85.5%;
@@ -248,11 +247,11 @@ body{
 .video-container {
     /* padding: 0; */
     position: relative;
-    width: 315px;
+    width: 312px;
     height:auto;
-    border: 8px solid rgba(54, 63, 140, 100%);
-    border-bottom-left-radius:10px ;
-    border-bottom-right-radius:10px;
+    border: 6px solid rgba(54, 63, 140, 100%);
+    border-bottom-left-radius:16px ;
+    border-bottom-right-radius:16px;
 }
 
 #vPayer{
@@ -260,12 +259,12 @@ body{
     /* background-color: red; */
     padding: 0;
     margin: 0;
-    width: 290px;
+    width: 250px;
 
 }
 .video-text {
 
-            font-size: 24px;
+            font-size: 20px;
             text-align: center;
             width:300px;
             height:50px;
@@ -278,68 +277,22 @@ body{
             border-bottom-right-radius:10px;
 }
 
-
-
-/* About section Responsiveness*/
-@media screen and (max-width: 768px) {
-    .about_container {
-        padding: 20px;
-        /* height:100%; */
-    }
-
-    .about_txt {
-        width: 50%;
-    }
-
-    .about_vision_and_mision_text {
-        margin-top: 50px;
-    }
-
-    .about_vision_and_mision_text h3::after {
-        margin-top: 5px;
-    }
-
-    .vision_text h3 {
-        margin-top: 30px;
-    }
-
-    .About_text_video_flex{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about_video_container {
-        margin-top: 30px;
-    }
-
-    .about_img_name {
-        top: auto;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        width: 100%;
-        height: auto;
-        padding: 10px;
-    }
-}
-
-
 /* Staff section starts here*/
 
 #staff_container{
     width: 100vw;
     height: 100vh;
     /* background-color: red; */
-    padding-top: 10px;
+    padding-top: 5px;
     
 }
 
 #staff_container h2{
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 15px;
+    padding: 10px;
     /* background-color: black; */
     /* display: flex; */
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     /* color: white; */
     font-family: 'Lucida Sans Regular', 'Lucida Sans',  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -347,9 +300,9 @@ body{
 }
 
 #staff_container .staff_text_box{
-    width:60%;
-    height:80px;
-    padding: 20px;
+    width:50%;
+    height:40px;
+    padding: 10px;
     background-color: rgba(54, 63, 140, 66%);
     color:white;
     display: flex;
@@ -360,25 +313,25 @@ body{
 
 .staff_text_box h6 {
 
-    font-size: 25px;
+    font-size: 15px;
     font-weight: lighter;
     font-family: 'Lucida Sans Regular', 'Lucida Sans',  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 
 .staffs{
-    width: 250px;
-    height: 240px;
-    margin: 10px;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
     /* padding: 5px; */
     background-color: rgba(54, 63, 140, 66%);
     /* border-radius: 50%; */
-    margin: 50px 20px 0px 20px;
+    margin: 50px 10px 0px 10px;
 }
 
 .staffs img{
-    width: 240px;
-    height: 240px;
+    width: 200px;
+    height: 200px;
     max-width: 100%;
     max-height: auto;
     border-radius: 50%;
@@ -394,18 +347,27 @@ body{
     /* position: relative; */
 }
 .name{
-    width:250px;
-    height:50px;
+    width:200px;
+    height:40px;
     color:white;
     display: flex;
     justify-content: center;
     align-items: center;
-    background:rgba(54, 63, 140, 100%);
+    background-color: rgba(54, 63, 140, 66%);
     border-bottom-left-radius:10px ;
     border-bottom-right-radius:10px;
-    padding: 20px;
+    padding: 10px;
     /* position:absolute;
     bottom:0px; */
+}
+
+.name p {
+    /* background-color: red; */
+    width: 200px;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* PROJECT SECTION */
@@ -415,13 +377,11 @@ body{
     width: 100vw;
     height: 100vh;
     background: linear-gradient(to bottom, rgba(54, 63, 140, 0), rgba(16, 3, 129, 0.3));
-
-
 }
 
 .primary-project {
-    width: 300px;
-    height: 450px;
+    width: 200px;
+    height: 350px;
     /* padding: 40px; */
     /* border: 4px solid rgba(54, 63, 140, 100%); */
     position: absolute;
@@ -430,32 +390,43 @@ body{
 
 }
 
-.project-text  {
-    color: white;
-    /* background-color: red; */
-    position: absolute;
-    bottom: 50px;
-    left: 31%;
-    width: 65%;
-    line-height: 40px;
-    font-size: 40px;
-}
-
 .primary-project video {
-    width: 300px;
+    width: 200px;
     height: 100%;
     max-width: 100%;  /*Ensure image doesn't exceed container width */
     max-height: 100%; /*Ensure image doesn't exceed container height */
     object-fit: cover;/* Adjusts how the image is fitted */
 }
+.Explore-text {
+    position:absolute;
+    top: 180px;
+    left: 31%;
+    background-color: rgba(16, 3, 129, 0.5);
+    color: white;
+    width: 270px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+
+}
+.Explore-text h2 {
+    font-size: 40px;
+}
+.Explore-text h4 {
+    font-size: 20px;
+    font-weight: lighter;
+}
 
 .pdisplay {
-    width: 280px;
+    width: 220px;
     height: auto;
 
 }
 .projectimg {
-    width: 280px; 
+    width: 220px; 
     height: auto;
     margin: 0;
     max-width: 100%;  /*Ensure image doesn't exceed container width */
@@ -467,49 +438,37 @@ body{
     position: absolute;
     top: 50px;
     left: 60%;
-    border: 15px solid red;
+    border: 12px solid red;
     z-index: 1;
 }
 .project2 {
     position: absolute;
-    top: 240px;
+    top: 203px;
     left: 55%;
-    border: 15px solid black;
+    border: 12px solid black;
 }
 .project3 {
     position: absolute;
-    top: 210px;
-    left: 72%;
-    border: 15px solid blue;
+    top: 160px;
+    left: 73%;
+    border: 12px solid blue;
 }
 .project4 {
     position: absolute;
-    top: 340px;
+    top: 260px;
     left: 65%;
-    border: 15px solid lightpink;
+    border: 12px solid lightpink;
 }
 
-.Explore-text {
-    position:absolute;
-    top: 220px;
-    left: 31%;
-    background-color: rgba(16, 3, 129, 0.5);
+.project-text  {
     color: white;
-    width: 370px;
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    line-height: 55px;
-
-}
-.Explore-text h2 {
-    font-size: 60px;
-}
-.Explore-text h4 {
-    font-size: 30px;
-    font-weight: lighter;
+    /* background-color: red; */
+    position: absolute;
+    bottom: 40px;
+    left: 31%;
+    width: 65%;
+    line-height: 25px;
+    font-size: 25px;
 }
 
 /* GALLARY SECTION START */
@@ -531,7 +490,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 70px;
+    font-size: 50px;
     font-family: 'Lucida Sans Regular', 'Lucida Sans',  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   
@@ -548,13 +507,13 @@ body{
 }
 
 .vcaption {
-    width: 260px;
+    width: 200px;
     height: auto;
     /* border: 4px solid rgba(54, 63, 140, 100%); */
 }
 
 .vcaption video {
-    width: 260px;
+    width: 200px;
     height: 100%;
     max-width: 100%;  /*Ensure image doesn't exceed container width */
     max-height: 100%; /*Ensure image doesn't exceed container height */
@@ -585,17 +544,13 @@ body{
 
 .gal {
     width: 100%; 
-    height: 200px;
+    height: 155px;
     margin: 0;
     max-width: 100%;  /*Ensure image doesn't exceed container width */
     max-height: 100%; /*Ensure image doesn't exceed container height */
     object-fit: cover;/* Adjusts how the image is fitted */    
 }
 
-.gal:hover {
-    width: 100%;
-    
-}
 .img1 {
     grid-column: 1 / 3;
     border: 6px solid red;
@@ -671,20 +626,16 @@ body{
     /* background-color: rgba(20, 10, 156, 1); */
     color: white;
     justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 10px;
     
 }
-
-
 
 .psuedochild {
     display: flex;
     align-items:center;
     justify-content: space-between;
-    /* background-color: red; */
-    /* width: 400px; */
 
 }
 
@@ -693,10 +644,10 @@ body{
   content: ' ';
   position: relative;
   /* top: 50%; */
-  left: 50%;
+  left: 10%;
   z-index: 1;
   width: 2px; /* Adjust the width of the line */
-  height: 110px; /* Adjust the height/thickness of the line */
+  height: 80px; /* Adjust the height/thickness of the line */
   background-color: white; /* Adjust the color of the line */
 }
 
@@ -706,7 +657,7 @@ body{
 
 .fggchild p {
     /* font-size: 15px; */
-    line-height: 30px;
+    line-height: 20px;
 }
 .fggchild span {
     font-weight: bolder;
@@ -714,7 +665,7 @@ body{
 }
 
 .fggchild i {
-    font-size: 50px;
+    font-size: 30px;
     padding-right: 10px;
 }
 
@@ -730,7 +681,8 @@ body{
 }
 
 .sggchild {
-    line-height: 30px;
+    line-height: 20px;
+    font-size: 12px;
 }
 .sggchild1 h2 {
     margin-top: 15px;
