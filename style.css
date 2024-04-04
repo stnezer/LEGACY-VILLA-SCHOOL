@@ -5,11 +5,19 @@
     padding: 0;
     margin: 0;
     font-family: "Poppins";
+    
 }
 
-body{
+html, body{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
     font-family: "Poppins";
+    overflow-x: hidden;
+
 }
+
 
 
 /*header*/
@@ -403,26 +411,26 @@ body{
 
 .project1 {
     position: absolute;
-    top: 52px;
+    top: 62px;
     left: 60%;
     border: 12px solid red;
     z-index: 1;
 }
 .project2 {
     position: absolute;
-    top: 203px;
+    top: 213px;
     left: 55%;
     border: 12px solid black;
 }
 .project3 {
     position: absolute;
-    top: 160px;
+    top: 170px;
     left: 73%;
     border: 12px solid blue;
 }
 .project4 {
     position: absolute;
-    top: 260px;
+    top: 270px;
     left: 65%;
     border: 12px solid lightpink;
 }
@@ -447,7 +455,7 @@ body{
     padding: 5px 100px;
     column-gap: 10px;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
   }
 
   #gallery h1 {
@@ -628,7 +636,7 @@ body{
 }
 .fggchild span {
     font-weight: bolder;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .fggchild i {
@@ -652,7 +660,7 @@ body{
     font-size: 10px;
 }
 .sggchild1 h2 {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .sggchild h3 {
     margin-bottom: 15px;
