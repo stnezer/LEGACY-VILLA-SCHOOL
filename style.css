@@ -1,5 +1,7 @@
 /*universal style*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -33,7 +35,6 @@ html, body{
 
  #navOne {
     background-color: rgba(126, 170, 250, 0.788);
-
     height: 30px;
     width: 100%;
     color: white;
@@ -71,13 +72,17 @@ html, body{
     background-color: rgba(28, 4, 167, 0.849);
     color: white;
     height: 40px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 /*second div in the header tag */
+
+#menuIcon {
+    display: none;
+}
 
 #logo {
     padding-left: 100px;
@@ -92,6 +97,13 @@ html, body{
 
 #navLink {
     margin-right: 200px;
+}
+
+#navLink a:hover {
+    background-color: rgba(126, 170, 250, 0.788);
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 #navLink a {
@@ -231,6 +243,11 @@ html, body{
     border-bottom-right-radius:16px;
 }
 
+.video-container video {
+    width: 300px;
+    height: 400px;
+}
+
 #vPayer{
 
     /* background-color: red; */
@@ -260,13 +277,13 @@ html, body{
     width: 100%;
     height: 100vh;
     /* background-color: red; */
-    padding-top: 10px;
+    /* padding-top: 10px; */
     
 }
 
 #staff_container h2{
-    margin-top: 6%;
-    padding: 10px;
+    margin: 3% auto;
+    /* padding: 10px; */
     /* background-color: black; */
     /* display: flex; */
     font-size: 40px;
@@ -289,26 +306,26 @@ html, body{
 }
 
 .staff_text_box h6 {
-
+    margin: 2% auto;
     font-size: 15px;
     font-weight: lighter;
-    font-family: 'Lucida Sans Regular', 'Lucida Sans',  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans Regular', 'Lucida Sans',  'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
 
 }
 
 .staffs{
     width: 15%;
-    height: 200px;
-    margin: 1%;
-    /* padding: 5px; */
+    /* height: 200px; */
+    /* margin: 1%; */
+    padding: 5px;
     background-color: rgba(54, 63, 140, 66%);
     /* border-radius: 50%; */
-    margin: 3% 1% 0px 1%;
+    margin: 5% 2% 0px 1%;
 }
 
 .staffs img{
     width: 100%;
-    /* height: 200px; */
+    height: 200px;
     max-width: 100%;
     max-height: 100%;
     border-radius: 50%;
@@ -318,11 +335,12 @@ html, body{
 
 .staff_images{
     display:flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     align-items: center;
     justify-content:space-evenly;
     /* position: relative; */
 }
+
 .name{
     width:100%;
     height:40px;
@@ -331,19 +349,22 @@ html, body{
     justify-content: center;
     align-items: center;
     background-color: rgba(54, 63, 140, 66%);
-    border-bottom-left-radius:10px ;
-    border-bottom-right-radius:10px;
     padding: 10px;
 }
 
+
 .name p {
     /* background-color: red; */
+    
     width: 100%;
     font-size: small;
+    /* margin: 1% auto; */
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
+
 
 /* PROJECT SECTION */
 
@@ -482,13 +503,13 @@ html, body{
 
 .vcaption {
     width: 100%;
-    /* height: auto; */
+    /* height: ; */
     /* border: 4px solid rgba(54, 63, 140, 100%); */
 }
 
 .vcaption video {
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
     max-width: 100%;  /*Ensure image doesn't exceed container width */
     max-height: 100%; /*Ensure image doesn't exceed container height */
     object-fit: cover;/* Adjusts how the image is fitted */
@@ -501,6 +522,8 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
     
 }
 
@@ -511,9 +534,9 @@ html, body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    /* row-gap: 1px;  */
+    row-gap: 2px; 
     padding: 10px;
-    column-gap: 20px;
+    column-gap: 10px;
     /* background-color: green; */
 }
 
@@ -610,25 +633,19 @@ html, body{
     /* background-color: rgba(20, 10, 156, 1); */
     color: white;
     justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 10px;
     
 }
 
-/* .psuedochild {
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-
-} */
 
 .psuedochild::after {
 
   content: ' ';
   position: relative;
   /* top: 50%; */
-  left: 50%;
+  left: 40%;
   z-index: 1;
   width: 2px; /* Adjust the width of the line */
   height: 80px; /* Adjust the height/thickness of the line */
@@ -660,9 +677,9 @@ html, body{
 /* second child of footer that has diff background color */
 
 .sgchild {
-    width: 100%;
+    width: 80%;
     height: 60%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     /* background-color: yellow; */
 }
 
@@ -676,33 +693,1684 @@ html, body{
 }
 
 
+/* RESPONSIVENESS START HERE */
 
-/* @media screen and (max-width: 768px) {
-    .staff_container {
+@media screen and (max-width: 2560px ) {
+
+    /*header*/
+
+#headdiv {
+
+    width: 100%;
+    height: 120px;
+    /*background-color: black;*/
+}
+
+/*top div in the header*/
+
+ #navOne {
+    background-color: rgba(126, 170, 250, 0.788);
+    height: 50%;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 100px;
+    padding-left: 50px;
+
+}
+
+/*anchor tag in the top-div 'in header*/
+
+#navOne div a{
+    display: inline-flex;
+    margin: 5% auto;
+    text-decoration: none;
+    padding-right: 20px;
+    color: white;
+    font-size:large;
+}
+
+/*icons style with general class*/
+
+.fa {
+    color: white;
+    margin-right: 10px;
+    font-size: large;
+    
+}
+
+/*second div in the header*/
+
+#navTwo {
+    background-color: rgba(28, 4, 167, 0.849);
+    color: white;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*second div in the header tag */
+
+#logo {
+    padding-left: 100px;
+    margin-top: 10px;
+
+}
+#logo img {
+    width: 40px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+#navLink {
+    margin-right: 400px;
+}
+
+#navLink a:hover {
+    background-color: rgba(126, 170, 250, 0.788);
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#navLink a {
+    text-decoration: none;
+    color: white;
+    margin-right: 60px;
+    font-size: large;
+    font-weight: bold;
+}
+
+/*MAIN SECTION STYLING*/
+
+#homePage {
+    
+    background: linear-gradient(to bottom, rgba(12, 1, 39, 1), rgba(27, 3, 240, 0.7));
+    background-image: url("./others/LVSEXPOSURE2dark.jpg");
+    background-position: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 88.3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+#welcomeNote {
+    background: linear-gradient(to bottom, rgba(128, 139, 196, 0), rgba(94, 109, 187,0.9));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 80px;
+    letter-spacing: 6px;
+    width: 70%;
+    height: 160px;
+    border-radius: 30px;
+}
+
+#welcomeNote h1 {
+    color:rgba(241, 233, 233, 0.772);
+    font-size: 60px;
+    text-shadow: 6px 6px 6px rgba(194, 86, 86, 0.5);
+    
+}
+
+#welcomeNote p {
+    color: white;
+    font-size: 40px;
+    font-weight: lighter;
+}
+    
+}
+@media screen and (max-width: 1970px) {
+
+
+/*second div in the header tag */
+
+
+
+#navLink {
+    /* background-color: red; */
+    margin-right: 200px;
+}
+
+
+#navLink a {
+    text-decoration: none;
+    color: white;
+    margin-right: 40px;
+    font-size: large;
+    font-weight: bold;
+}
+
+/*MAIN SECTION STYLING*/
+
+  
+
+#welcomeNote h1 {
+    color:rgba(241, 233, 233, 0.772);
+    font-size: 45px;
+    text-shadow: 6px 6px 6px rgba(194, 86, 86, 0.5);
+    
+}
+
+#welcomeNote p {
+    color: white;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+    
+}
+
+@media screen and (max-width:1565px) {
+
+    /*header*/
+
+#headdiv {
+
+    width: 100%;
+    height: 70px;
+    /*background-color: black;*/
+}
+
+/*top div in the header*/
+
+ #navOne {
+    background-color: rgba(126, 170, 250, 0.788);
+    height: 30px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 100px;
+    padding-left: 50px;
+
+}
+
+/*anchor tag in the top-div 'in header*/
+
+#navOne div a{
+    display: inline-flex;
+    margin: 5px auto;
+    text-decoration: none;
+    padding-right: 10px;
+    color: white;
+    font-size: small;
+}
+
+/*icons style with general class*/
+
+.fa {
+    color: white;
+    margin-right: 10px;
+    font-size: small;
+    
+}
+
+/*second div in the header*/
+
+#navTwo {
+    background-color: rgba(28, 4, 167, 0.849);
+    color: white;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*second div in the header tag */
+
+#logo {
+    padding-left: 100px;
+    margin-top: 10px;
+
+}
+#logo img {
+    width: 30px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+#navLink {
+    margin-right: 200px;
+}
+
+#navLink a:hover {
+    background-color: rgba(126, 170, 250, 0.788);
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#navLink a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    font-size: small;
+    font-weight: bold;
+}
+
+/*MAIN SECTION STYLING*/
+
+#homePage {
+    
+    background: linear-gradient(to bottom, rgba(12, 1, 39, 1), rgba(27, 3, 240, 0.7));
+    background-image: url("./others/LVSEXPOSURE2dark.jpg");
+    background-position: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 88.3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+#welcomeNote {
+    background: linear-gradient(to bottom, rgba(128, 139, 196, 0), rgba(94, 109, 187,0.9));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 45px;
+    letter-spacing: 4px;
+    width: 70%;
+    height: 120px;
+    border-radius: 30px;
+}
+
+#welcomeNote h1 {
+    color:rgba(241, 233, 233, 0.772);
+    font-size: 40px;
+    text-shadow: 4px 4px 4px rgba(194, 86, 86, 0.5);
+    
+}
+
+#welcomeNote p {
+    color: white;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+   
+}
+
+
+@media screen and (max-width: 1332px) {
+
+
+    /*top div in the header*/
+
+    #navOne {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    /*anchor tag in the top-div 'in header*/
+
+    #navOne div a{
+        display: inline-flex;
+        margin: 5px auto;
+        text-decoration: none;
+        padding-right: 5px;
+        color: white;
+        font-size: small;
+    }
+
+    /*icons style with general class*/
+
+    .fa {
+        color: white;
+        margin-right: 5px;
+        font-size: small;
+        
+    }
+
+
+    /*second div in the header tag */
+
+    #logo {
+        padding-left: 50px;
         margin-top: 10px;
 
-        .staff_text_box{
-            width:70%;
-            text-align: center;
-            margin:5px auto;
-        }
-        .staff_images{
-            flex-direction: column;
-        }
-        .staff_img1, .staff_img2, .staff_img3{
-            width:300px;
-            height: 300px;
-            margin:50px auto;
-        }
-        .staff_img1 img, .staff_img2 img, .staff_img3 img{
-            width:100%;
-            height:100%;
-        }
-        .staff_img1_name, .staff_img2_name, .staff_img3_name{
-            width:300px
-        }
-        .staff_slider1,  .staff_slider2{
-            display:none;
-        }
     }
+
+
+    #navLink {
+        margin-right: 80px;
+    }
+
+    #navLink a {
+        text-decoration: none;
+        color: white;
+        margin-right: 10px;
+        font-size: small;
+        /* font-weight: bold; */
+    }
+
+    /*MAIN SECTION STYLING*/
+    #homePage {
+        position: relative;
+    }
+    
+
+    #welcomeNote {
+        position: absolute;
+        top: 220px;
+        background: linear-gradient(to bottom, rgba(128, 139, 196, 0), rgba(94, 109, 187,0.9));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 40px;
+        letter-spacing: 2px;
+        width: 60%;
+        height: 120px;
+        border-radius: 30px;
+    }
+
+    #welcomeNote h1 {
+        color:rgba(241, 233, 233, 0.772);
+        font-size: 30px;
+        text-shadow: 4px 4px 4px rgba(194, 86, 86, 0.5);
+        
+    }
+
+    #welcomeNote p {
+        color: white;
+        font-size: 22px;
+        font-weight: lighter;
+    }
+
+
+    /* About section starts here */
+
+    /* #about_container{ */
+        /* height:100%; */
+        /* background-color: blue; */
+        /* padding: 10px; */
+        /* background: linear-gradient(to bottom, rgba(54, 63, 140, 0), rgba(16, 3, 129, 0.3));
+        display: flex;
+        flex-direction: column; */
+    /* } */
+
+    .about_txt{
+        /* width: 22%;
+        height:50px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border: 6px solid rgba(54, 63, 140, 100%); */
+        margin: 1.5% auto;
+    }
+    .about_txt h3 {
+        font-size: 20px;
+    }
+
+    .about-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .missionNvision {
+
+        width: 40%;
+        height: 100%;
+        position: relative;
+
+    }
+    .statement{
+        /* margin-top: 50px; */
+        line-height: 30px;
+        /* background-color: yellow; */
+        width: 100%;
+    }
+    .mision-text::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 6px;
+        background-color:rgba(54, 63, 140, 100%);
+        /* margin: 40px 0px; */
+        position: absolute;
+        top: 35px;
+    }
+    .vision_text::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 6px;
+        background-color:rgba(54, 63, 140, 100%);
+        /* margin: 40px 0px; */
+        position: absolute;
+        top: 245px;
+    }
+
+    /* .statement h3{
+        margin-bottom: 9%;
+        font-size: 20px;
+    }
+    .statement p{
+        margin-bottom: 8%;
+        font-size: 20px;
+    } */
+
+
+    /* video Stylling */
+
+    /* .video-container {
+
+        position: relative;
+
+        height:auto;
+        border: 6px solid rgba(54, 63, 140, 100%);
+        border-bottom-left-radius:16px ;
+        border-bottom-right-radius:16px;
+    } */
+
+    /* #vPayer{
+
+        padding: 0;
+        margin: 0;
+
+
+    } */
+    .video-text {
+
+                font-size: 15px;
+                /* text-align: center;
+                width: 100%;
+                height:50px;
+                color:white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background:rgba(54, 63, 140, 100%);
+                border-bottom-left-radius:10px ;
+                border-bottom-right-radius:10px; */
+    }
+
+    /* Staff section starts here*/
+
+    #staff_container{
+        width: 100%;
+        /* height: 100%; */
+        padding-top: 0px;
+        /* background-color: red; */
+        margin: 0;
+        
+    }
+    .staff_images {
+        /* background-color: greenyellow; */
+        margin: 0;
+    }
+
+    #staff_container h2{
+        margin: 0;
+        padding: 10px;
+        font-size: 40px;
+        text-align: center;
+        font-family: 'Lucida Sans Regular', 'Lucida Sans',  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        /* background-color: green; */
+    }
+
+    #staff_container .staff_text_box{
+
+        margin: 1px auto;
+        padding: 0;
+
+
+    }
+
+    /* .staff_text_box h6 {
+
+        font-size: 15px;
+        font-weight: lighter;
+        font-family: 'Lucida Sans Regular', 'Lucida Sans',  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    } */
+
+    .staffs{
+        width: 25%;
+        /* height: 200px; */
+        margin: 0;
+        background-color: rgba(54, 63, 140, 66%);
+        margin: 1% 5% 2px 0px;
+        
+    }
+
+
+    .staff_images{
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:center;
+        padding: 0px 100px;
+    }
+    .name {
+        display: none;
+    }
+
+
+    /* PROJECT SECTION */
+
+    /* #Explore-project-section {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to bottom, rgba(54, 63, 140, 0), rgba(16, 3, 129, 0.3));
+    } */
+
+    .primary-project {
+        width: 100%;
+        /* height: 100vh; */
+        position: absolute;
+        top: 140px;
+        left: 6%;
+
+    }
+
+    /* .primary-project video {
+        width: 16%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    } */
+
+    .Explore-text {
+        position:absolute;
+        top: 180px;
+        left: 25%;
+        background-color: rgba(16, 3, 129, 0.5);
+        color: white;
+        width: 20%;
+        height: 13%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 40px;
+
+    }
+    .Explore-text h2 {
+        font-size: 35px;
+    }
+    .Explore-text h4 {
+        font-size: 17px;
+        font-weight: lighter;
+    }
+
+    /* .pdisplay {
+        width: 16%;
+        height: auto;
+
+    } */
+
+    /* .projectimg {
+        width: 100%; 
+        height: 100%;
+        margin: 0;
+        max-width: 100%;  
+        max-height: 100%;
+        object-fit: cover;    
+    } */
+
+    .project1 {
+        position: absolute;
+        top: 74px;
+        left: 55%;
+        border: 12px solid red;
+        z-index: 1;
+    }
+    .project2 {
+        position: absolute;
+        top: 223px;
+        left: 50%;
+        border: 12px solid black;
+    }
+    .project3 {
+        position: absolute;
+        top: 180px;
+        left: 68%;
+        border: 12px solid blue;
+    }
+    .project4 {
+        position: absolute;
+        top: 280px;
+        left: 60%;
+        border: 12px solid lightpink;
+    }
+
+    .project-text  {
+        color: white;
+        /* background-color: red; */
+        position: absolute;
+        bottom: 15px;
+        left: 25%;
+        width: 65%;
+        line-height: 25px;
+        font-size: 25px;
+    }
+
+    /* GALLARY SECTION START */
+
+    #gallery {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        padding: 20px 5px;
+        column-gap: 0px;
+        width: 100%;
+        height: 100vh;
+    }
+
+    /* #gallery h1 {
+        grid-column: 1 / 6;
+        grid-row: 1 / 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        font-family: 'Lucida Sans Regular', 'Lucida Sans',  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    } */
+    
+    /* .vcontainer1 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 7;
+        
+    }
+
+    .vcontainer2 {
+        grid-column: 5 / 6;
+        grid-row: 3 / 7;    
+
+    } */
+
+    /* .vcaption {
+        width: 100%;
+
+    } */
+
+    .vcaption video {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;  
+        max-height: 100%; 
+        object-fit: cover;
+    }
+
+    #galimg {
+        grid-column: 2 / 5;
+        grid-row: 2 / 8;
+        /* background-color: blue; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+
+    /* START OF PICTURE DIV  GRID STYLING INSIDE THE GALLERY SECTION  */
+
+    #galimg {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 2px; 
+        padding: 10px;
+        column-gap: 10px;
+    }
+
+    .gal {
+        width: 100%; 
+        /* height: 100vh; */
+        margin: 0;
+        max-width: 100%;  /*Ensure image doesn't exceed container width */
+        max-height: 100%; /*Ensure image doesn't exceed container height */
+        object-fit: cover;/* Adjusts how the image is fitted */    
+    }
+
+    /* .img1 {
+        grid-column: 1 / 3;
+        border: 6px solid red;
+    }
+
+
+    .img2 {
+        grid-column: 3 / 4;
+        border: 6px solid blue;
+    }
+    .img3 {
+        grid-column: 1 / 2;
+        border: 6px solid purple;
+    }
+    .img4 {
+        grid-column: 2 /4;
+        border: 6px solid lightblue;
+    }
+    .img5 {
+        grid-column: 1 / 3;
+        border: 6px solid black;
+    }
+    .img6 {
+        grid-column: 3 / 4;
+        border: 6px solid red;
+    } */
+
+
+    /* FOOTER STYLING */
+
+    /* #footer {
+        height: 60%;
+        width: 100%;
+        margin-top:20%;
+        background: linear-gradient(to top, rgba(54, 63, 140, 0.5), rgba(16, 3, 129, 0.719));
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    } */
+
+    /* .fchild {
+
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    /* STYLE OF THE DOWNLINE OF THE FOOTER */
+    /* .schild {
+        width: 100%;
+        height: 10%;
+        background-color: lightgray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+    } */
+
+    /* .gchild {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;  
+    } */
+
+
+    /* contact email and location div */
+
+    .fgchild {
+
+        /* width: 80%;
+        height: 24%;
+        margin-top: 10px;
+        background: linear-gradient(to top, rgba(54, 63, 140, 0.5), rgba(16, 3, 129, 0.5));
+        color: white;
+        
+        border-radius: 10px; */
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content: space-between;
+
+        
+    }
+
+
+    .psuedochild::after {
+
+    /* content: ' ';
+    position: relative;
+    z-index: 1;
+    width: 2px; 
+    height: 80px; 
+    background-color: white; */
+    left: 40%; 
+    }
+
+    /* .fggchild {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    } */
+
+    /* .fggchild p {
+        font-size: 12px;
+        line-height: 20px;
+    } */
+    /* .fggchild span {
+        font-weight: bold;
+        margin-top: 10px;
+    } */
+
+    /* .fggchild i {
+        font-size: 40px;
+        padding-right: 10px;
+    } */
+
+
+
+    /* second child of footer that has diff background color */
+
+    .sgchild {
+        width: 80%;
+        height: 60%;
+        justify-content: space-between;
+
+    }
+
+    /* .sggchild {
+        line-height: 20px;
+        font-size: 10px;
+    } */
+
+    /* .sggchild h3 {
+        margin-bottom: 15px;
+    } */
+     
+}
+
+@media screen and (max-width: 1205px) {
+
+
+    
+
+/* Staff section starts here*/
+
+#staff_container{
+    width: 100%;
+    /* height: 100%; */
+    padding-top: 0px;
+    /* background-color: red; */
+    margin: 0;
+    
+}
+.staff_images {
+    /* background-color: greenyellow; */
+    margin: 0;
+}
+
+#staff_container h2{
+    margin: 0;
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Lucida Sans Regular', 'Lucida Sans',  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    /* background-color: green; */
+}
+
+#staff_container .staff_text_box{
+
+    /* margin: 1px auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    display: none;
+
+
+}
+
+/* .staff_text_box h6 {
+    width: 90%;
+    overflow: hidden;
+    background-color: blue;
+    
+    
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: 'Lucida Sans Regular', 'Lucida Sans',  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 } */
+
+.staffs{
+    width: 25%;
+    /* height: 200px; */
+    margin: 0;
+    background-color: rgba(54, 63, 140, 66%);
+    margin: 2% 5% 0px 0px;
+    
+}
+
+.staff_img5, .staff_img4 {
+    margin-top: 8%;
+}
+
+
+.staff_images{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    padding: 0px 100px;
+    margin: 0;
+}
+.name {
+    display: block;
+    margin-top: 2px;
+}
+
+
+    /* PROJECT SECTION */
+
+
+
+    .project1 {
+        position: absolute;
+        top: 88px;
+        left: 55%;
+        border: 12px solid red;
+        z-index: 1;
+    }
+
+   
+
+    /* FOOTER STYLING */
+
+   
+
+
+    .psuedochild::after {
+        left: 20%; 
+    }
+   
+}
+
+@media screen and (max-width: 1148px) {
+
+    /* top div in the header*/
+
+    .cnl11 {
+        display: none;
+    }
+
+ 
+    /*second div in the header tag */
+
+    #logo {
+        padding-left: 30px;
+        margin-top: 10px;
+    }
+
+
+    #navLink {
+        margin-right: 50px;
+    }
+
+    #navLink a {
+        text-decoration: none;
+        color: white;
+        margin-right: 5px;
+        font-size: smaller;
+        /* font-weight: bold; */
+    }
+
+    /*MAIN SECTION STYLING*/
+
+    
+    #welcomeNote {
+
+        height: 100px;
+    }
+
+    #welcomeNote h1 {
+
+        font-size: 22px;
+        
+    }
+
+    #welcomeNote p {
+
+        font-size: 15px;
+
+    }
+
+
+    /* About section starts here */
+
+    /* #about_container{ */
+        /* height:100%; */
+        /* background-color: blue; */
+        /* padding: 10px; */
+        /* background: linear-gradient(to bottom, rgba(54, 63, 140, 0), rgba(16, 3, 129, 0.3));
+        display: flex;
+        flex-direction: column; */
+    /* } */
+
+    .about_txt{
+        /* width: 22%;
+        height:50px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border: 6px solid rgba(54, 63, 140, 100%); */
+        margin: 1.5% auto;
+    }
+    .about_txt h3 {
+        font-size: 20px;
+    }
+
+    .about-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .missionNvision {
+
+        width: 40%;
+        height: 100%;
+        position: relative;
+
+    }
+    .statement{
+        /* margin-top: 50px; */
+        line-height: 30px;
+        /* background-color: yellow; */
+        width: 100%;
+    }
+    .mision-text::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 6px;
+        background-color:rgba(54, 63, 140, 100%);
+        /* margin: 40px 0px; */
+        position: absolute;
+        top: 35px;
+    }
+    .vision_text::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 6px;
+        background-color:rgba(54, 63, 140, 100%);
+        /* margin: 40px 0px; */
+        position: absolute;
+        top: 200px;
+    }
+
+    /* .statement h3{
+        margin-bottom: 9%;
+        font-size: 20px;
+    }
+    .statement p{
+        margin-bottom: 8%;
+        font-size: 20px;
+    } */
+
+
+    /* video Stylling */
+
+    .video-container {
+
+        width: 25%;
+
+        /* position: relative;
+
+        height:auto;
+        border: 6px solid rgba(54, 63, 140, 100%);
+        border-bottom-left-radius:16px ;
+        border-bottom-right-radius:16px; */
+    }
+
+    #vPlayer{
+        width: 100%;
+
+        padding: 0;
+        margin: 0;
+
+
+    }
+    .video-text {
+
+                font-size: 15px;
+                /* text-align: center;
+                width: 100%;
+                height:50px;
+                color:white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background:rgba(54, 63, 140, 100%);
+                border-bottom-left-radius:10px ;
+                border-bottom-right-radius:10px; */
+    }
+
+    /* Staff section starts here*/
+
+    #staff_container{
+        width: 100%;
+        /* height: 100%; */
+        padding-top: 0px;
+        /* background-color: red; */
+        margin: 0;
+        
+    }
+    .staff_images {
+        /* background-color: greenyellow; */
+        margin: 0;
+    }
+
+    #staff_container h2{
+        margin: 0;
+        padding: 10px;
+        font-size: 40px;
+        text-align: center;
+        font-family: 'Lucida Sans Regular', 'Lucida Sans',  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        /* background-color: green; */
+    }
+
+    #staff_container .staff_text_box{
+
+        /* margin: 1px auto;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center; */
+        display: none;
+
+
+    }
+
+    /* .staff_text_box h6 {
+        width: 90%;
+        overflow: hidden;
+        background-color: blue;
+        
+        
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        font-weight: lighter;
+        font-family: 'Lucida Sans Regular', 'Lucida Sans',  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    } */
+
+    .staffs{
+        width: 25%;
+        /* height: 200px; */
+        margin: 0;
+        background-color: rgba(54, 63, 140, 66%);
+        margin: 2% 5% 0px 0px;
+        
+    }
+
+    .staff_img5, .staff_img4 {
+        margin-top: 8%;
+    }
+
+
+    .staff_images{
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:center;
+        padding: 0px 100px;
+        margin: 0;
+    }
+    .name {
+        display: block;
+        margin-top: 2px;
+    }
+
+        /* PROJECT SECTION */
+
+    /* #Explore-project-section {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to bottom, rgba(54, 63, 140, 0), rgba(16, 3, 129, 0.3));
+    } */
+
+    .primary-project {
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        top: 140px;
+        left: 20%;
+
+    }
+
+    /* .primary-project video {
+        width: 16%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    } */
+
+    .Explore-text {
+        position:absolute;
+        top: 70px;
+        left: 30%;
+        background-color: rgba(16, 3, 129, 0.5);
+        color: white;
+        width: 20%;
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 40px;
+
+    }
+    .Explore-text h2 {
+        font-size: 30px;
+    }
+    .Explore-text h4 {
+        font-size: 15px;
+        font-weight: lighter;
+    }
+
+    /* .pdisplay {
+        width: 16%;
+        height: auto;
+
+    } */
+
+    /* .projectimg {
+        width: 100%; 
+        height: 100%;
+        margin: 0;
+        max-width: 100%;  
+        max-height: 100%;
+        object-fit: cover;    
+    } */
+
+    .project1 {
+        position: absolute;
+        top: 130px;
+        left: 53%;
+        border: 12px solid red;
+        z-index: 1;
+    }
+    .project2 {
+        position: absolute;
+        top: 243px;
+        left: 43%;
+        border: 12px solid black;
+    }
+    .project3 {
+        position: absolute;
+        top: 210px;
+        left: 62%;
+        border: 12px solid blue;
+    }
+    .project4 {
+        position: absolute;
+        top: 300px;
+        left: 55%;
+        border: 12px solid lightpink;
+    }
+
+    .project-text  {
+        color: white;
+        /* background-color: red; */
+        position: absolute;
+        bottom: 15px;
+        left: 10%;
+        width: 75%;
+        line-height: 25px;
+        font-size: 25px;
+    }
+
+
+    /* FOOTER STYLING */
+
+    .psuedochild::after {
+        left: 5%; 
+    }
+
+    /* .sggchild1 a, i {
+        width: 1px;
+        margin: 0;
+    } */
+
+
+}
+
+@media screen and (max-width: 855px ) {
+    
+    /* top div in the header*/
+   
+   #contact {
+       display: none;
+   }
+
+
+   /*second div in the header tag */
+
+   #logo {
+       padding-left: 30px;
+       margin-top: 10px;
+   }
+
+
+   #navLink {
+       margin-right: 50px;
+   }
+
+   #navLink a {
+       text-decoration: none;
+       color: white;
+       margin-right: 5px;
+       font-size: 10px;
+       /* font-weight: bold; */
+   }
+
+   /*MAIN SECTION STYLING*/
+
+   
+   #welcomeNote {
+
+       height: 55px;
+       border-radius: 15px;
+       line-height: 25px;
+   }
+
+   #welcomeNote h1 {
+
+       font-size: 20px;
+       
+   }
+
+   #welcomeNote p {
+
+       font-size: 15px;
+
+   }
+}
+
+@media screen and (max-width: 765px) {
+
+    
+    #headdiv {
+        height: 8%;
+    }
+    #navOne {
+        height: 50%;
+    }
+    #navTwo {
+        height: 50%;
+    }
+    #logo img {
+        width: 15px;
+    }
+
+
+
+    /*second div in the header tag */
+
+    #logo {
+        padding-left: 30px;
+        margin-top: 10px;
+    }
+
+
+    #navLink {
+        margin-right: 50px;
+    }
+
+    #navLink a {
+        text-decoration: none;
+        color: white;
+        margin-right: 5px;
+        font-size: 10px;
+        /* font-weight: bold; */
+    }
+
+    /*MAIN SECTION STYLING*/
+
+    #homePage {
+        position: relative;
+    }
+    
+
+    #welcomeNote {
+        position: absolute;
+        top: 120px;
+        height: 80px;
+        /* background-color: red; */
+    }    
+
+    #welcomeNote h1 {
+
+        font-size: 15px;
+        /* color: green; */
+        
+    }
+
+    #welcomeNote p {
+
+        font-size: 15px;
+
+    }
+}
+
+@media screen and (max-width: 681px ) {
+    
+    /* top div in the header*/
+   
+   #contact {
+       display: none;
+   }
+
+
+   /*second div in the header tag */
+
+   #logo {
+       padding-left: 30px;
+       margin-top: 10px;
+   }
+
+
+   #navLink {
+       margin-right: 40px;
+   }
+
+   #navLink a {
+       text-decoration: none;
+       color: white;
+       margin-right: 7px;
+       font-size: 7px;
+       font-weight: bold;
+   }
+
+   /*MAIN SECTION STYLING*/
+
+   
+   #welcomeNote {
+
+       height: 55px;
+       border-radius: 15px;
+       line-height: 22px;
+   }
+
+   #welcomeNote h1 {
+
+       font-size: 15px;
+       
+   }
+
+   #welcomeNote p {
+
+       font-size: 10px;
+
+   }
+}
+
+@media screen and (max-width: 600px) {
+
+     /*MAIN SECTION STYLING*/
+
+   #homePage {
+    position: relative;
+   }
+   #welcomeNote {
+    position: absolute;
+    top: 120px;
+    height: 50px;
+    border-radius: 15px;
+    line-height: 20px;
+   }
+
+   #welcomeNote h1 {
+
+       font-size: 10px;
+       
+   }
+
+   #welcomeNote p {
+
+       font-size: 7px;
+
+   }
+
+}
+
+@media screen and (max-width: 543px ) {
+
+    #headdiv {
+        height: 8%;
+    }
+    #navOne {
+        height: 50%;
+    }
+    #navTwo {
+        height: 50%;
+    }
+    #logo img {
+        width: 15px;
+    }
+    
+    /* top div in the header*/
+   
+   #contact {
+       display: none;
+   }
+
+
+   /*second div in the header tag */
+
+   #logo {
+       padding-left: 10px;
+       margin-top: 5px;
+   }
+
+
+   #navLink {
+       margin-right: 20px;
+   }
+
+   #navLink a {
+       text-decoration: none;
+       color: white;
+       margin-right: 5px;
+       font-size: 5px;
+       font-weight: bold;
+   }
+
+   /*MAIN SECTION STYLING*/
+
+   #homePage {
+    position: relative;
+   }
+   #welcomeNote {
+    position: absolute;
+    top: 120px;
+    height: 50px;
+    border-radius: 15px;
+    line-height: 20px;
+   }
+
+   #welcomeNote h1 {
+
+       font-size: 10px;
+       
+   }
+
+   #welcomeNote p {
+
+       font-size: 7px;
+
+   }
+}
+
+/* MOBILE VIEW RESPONSIVENESS START FROM HERE */
+
+@media screen and (max-width: 450px) {
+
+    #navLink {
+        display: none;
+    }
+
+    #navTwo {
+        position: relative;
+    }
+
+    #menu {
+        position: absolute;
+        right: 10px;
+        top: 0px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        line-height: 10px;
+    }
+
+    #menuIcon {
+        display: flex;
+        height: 10%;
+        /* width: 2%; */
+        background-color: red;
+        /* margin-right: 10px; */
+        /* padding: 2px; */
+    
+    }
+
+    #menuIcon i {
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+        margin-top: 7px;
+    }
+
+    #menu:hover #navLink {
+        display: flex;
+        flex-direction:column;
+        float: right;
+        /* position: absolute; */
+        /* top: 100px; */
+    }
+
+}

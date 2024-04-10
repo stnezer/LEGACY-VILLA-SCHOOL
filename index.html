@@ -11,6 +11,8 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap">
+    <!-- BOOSTRAP LINK -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <title>LEGACY VILLA SCHOOL</title>
 </head>
 <body>
@@ -18,11 +20,11 @@
     <!-- HEADER SECTION, CONTAIN NAV BAR AND LOGO-->   
 
     <header id="headdiv">
-        <div id="navOne">
+        <nav id="navOne">
             <div id="contact">
-                <a href=""><i class="fa-regular fa-clock fa"></i>8:00am - 4pm daily</a>
-                <a href=""><i class="fa-solid fa-phone fa"></i>+2348065519033</a>
-                <a href=""><i class="fa-solid fa-location-dot fa"></i>10 Ifelodun street, off Nureni Yusuf Drive Alagbado, Lagos.</a>
+                <a href="" class="cnl1 cnl11"><i class="fa-regular fa-clock fa"></i>8:00am - 4pm daily</a>
+                <a href="" class="cnl1 cnl12"><i class="fa-solid fa-phone fa"></i>+2348065519033</a>
+                <a href="" class="cnl1 cnl13"><i class="fa-solid fa-location-dot fa"></i>10 Ifelodun street, off Nureni Yusuf Drive Alagbado, Lagos.</a>
             </div>
             <div id="socialMedia">
                 <a href=""><i class="fa-brands fa-facebook fa"></i></a>
@@ -31,21 +33,26 @@
                 <a href=""><i class="fa-brands fa-linkedin fa"></i></a>
 
             </div>
-        </div>
-        <div id="navTwo">
+        </nav>
+        <nav id="navTwo">
             <div id="logo">
                 <img src="legacydocs/studentimg/LEGACY VILLA.jpg" alt="logo">
             </div>
-            <div id="navLink">
-                <a href="#headdiv">HOME</a>
-                <a href="#about_container">ABOUT US</a>
-                <a href="#staff_container">MEET OUR STAFF</a>
-                <a href="#Explore-project-section">OUR PROJECT</a>
-                <a href="#gallery">GALLERY</a>
-                <a href="#footer">CONTACT US</a>
 
+            <div id="menu">
+                <a id="menuIcon" href=""><i class="fa fa-bars" aria-hidden="true"></i>
+                </a>
+                <nav id="navLink">
+                    <a href="#headdiv">HOME</a>
+                    <a href="#about_container">ABOUT US</a>
+                    <a href="#staff_container">MEET OUR STAFF</a>
+                    <a href="#Explore-project-section">OUR PROJECT</a>
+                    <a href="#gallery">GALLERY</a>
+                    <a href="#footer">CONTACT US</a>
+                </nav>
             </div>
-        </div>
+
+        </nav>
     </header>
 
     <!---START OF MAIN SECTION, THE LANDING PAGE-->
@@ -81,7 +88,7 @@
             </div>
             <div class="video-container contentchild">
 
-                <video id="vPlayer" controls width="300px" height="400px" poster="./legacydocs/videos/propritress cover img.jpg">
+                <video id="vPlayer" controls poster="./legacydocs/videos/propritress cover img.jpg">
                     <source src="./legacydocs/videos/speech.mp4" type="video/mp4">                
                 </video>
                 <div class="video-text"><h5>Mrs. M.k ADAMA<br>(PROPRIETRESS)</h5></div>
@@ -104,31 +111,31 @@
             <figure class="staff_img1 staffs">
                 <img src="legacydocs/staffs_img/staff1.png " alt="">
                 <figcaption class="staff_img1_name name">
-                    <p>Mr Immanuel Okereke <br> (PRINCIPAL)</p>
+                    <p>Mr. Immanuel Okereke<br>(PRINCIPAL)</p>
                 </figcaption>
             </figure>
-            <figure class="staff_img1 staffs">
+            <figure class="staff_img2 staffs">
                 <img src="legacydocs/staffs_img/staff22.png" alt="">
-                <figcaption class="staff_img1_name name">
-                    <p>Mrs Majin Gloria<br>(ADMIN PERSONNEL)</p>
+                <figcaption class="staff_img2_name name">
+                    <p>Mrs. Majin Gloria<br>(ADMIN PERSONNEL)</p>
                 </figcaption>
             </figure>
-            <figure class="staff_img1 staffs">
+            <figure class="staff_img3 staffs">
                 <img src="legacydocs/staffs_img/staff66.png" alt="">
-                <figcaption class="staff_img1_name name">
-                    <p>Mrs Damilola Sunmola<br>(VICE PRINCIPAL)</p>
+                <figcaption class="staff_img3_name name">
+                    <p>Mrs. Damilola Sunmola<br>(VICE PRINCIPAL)</p>
                 </figcaption>
             </figure>
-            <figure class="staff_img1 staffs">
+            <figure class="staff_img4 staffs">
                 <img src="legacydocs/staffs_img/staff33.png" alt="">
-                <figcaption class="staff_img1_name name">
-                    <p>Mrs Ayeni Olufunke<br>(H.M ACADEMICS)</p>
+                <figcaption class="staff_img4_name name">
+                    <p>Mrs. Ayeni Olufunke<br>(H.M ACADEMICS)</p>
                 </figcaption>
             </figure>
-            <figure class="staff_img1 staffs">
+            <figure class="staff_img5 staffs">
                 <img src="legacydocs/staffs_img/staff55.png" alt="">
-                <figcaption class="staff_img1_name name">
-                    <p>Mrs Mayowa Ojelade<br>(H.M ADMIN)</p>
+                <figcaption class="staff_img5_name name">
+                    <p>Mrs. Mayowa Ojelade<br>(H.M ADMIN)</p>
                 </figcaption>
             </figure>
         </div>
@@ -181,9 +188,6 @@
             <video controls loop class="jproject project" poster="./legacydocs/videos/SS PROJECT POSTER.jpg">
                 <source src="">
             </video>
-            <!-- <p class="vcaption2 vcap">
-                Nexst Term Project for Primary School
-            </p> -->
         </div>
 
     </section>
@@ -232,6 +236,9 @@
 
         </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
  
 </body>
 </html>
