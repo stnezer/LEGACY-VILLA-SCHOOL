@@ -806,7 +806,7 @@ body {
     background-position: cover;
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 97%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -844,7 +844,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 70%;
+    height: 100%;
     padding: 10px;
     background: linear-gradient(
       to bottom,
@@ -965,7 +965,7 @@ body {
 
   #staff_container {
     width: 100%;
-    height: 88%;
+    height: 100%;
     margin-bottom: 5px;
     /* background-color: red; */
     padding-top: 40px;
@@ -1079,7 +1079,7 @@ body {
   /*MAIN SECTION STYLING*/
 
   #homePage {
-    height: 76%;
+    height: 100%;
   }
 
   #welcomeNote h1 {
@@ -1097,7 +1097,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 63%;
+    height: 100%;
     font-size: 16px;
     /* background-color: blue; */
     padding: 10px;
@@ -1221,7 +1221,7 @@ body {
 
   #staff_container {
     width: 100%;
-    height: 75%;
+    height: 100%;
     margin-bottom: 5px;
     /* background-color: red; */
     padding-top: 40px;
@@ -1414,7 +1414,7 @@ body {
     background-position: cover;
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 62%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1452,7 +1452,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 55%;
+    height: 100%;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -1578,7 +1578,7 @@ body {
   }
 
   #staff_container {
-    height: 70%;
+    height: 100%;
     margin-bottom: 5px;
   }
 }
@@ -1632,7 +1632,7 @@ body {
   /*MAIN SECTION STYLING*/
   #homePage {
     position: relative;
-    height: 51%;
+    height: 100%;
   }
 
   #welcomeNote {
@@ -1669,7 +1669,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 45%;
+    height: 100%;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -1795,7 +1795,7 @@ body {
 
   #staff_container {
     width: 100%;
-    height: 55%;
+    height: 100%;
     /* background-color: red; */
     padding-top: 40px;
     align-items: center;
@@ -1919,7 +1919,7 @@ body {
   /*MAIN SECTION STYLING*/
 
   #homePage {
-    height: 35%;
+    height: 100%;
   }
 
   #welcomeNote {
@@ -1939,7 +1939,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 40%;
+    height: 100%;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -2066,7 +2066,7 @@ body {
 
   #staff_container {
     width: 100%;
-    height: 72%;
+    height: 100%;
     padding-top: 0px;
     /* background-color: red; */
     margin: 0;
@@ -2293,7 +2293,7 @@ body {
   /*MAIN SECTION STYLING*/
 
   #homePage {
-    height: 30%;
+    height: 100%;
   }
 
   #welcomeNote {
@@ -2315,7 +2315,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 35%;
+    height: 100%;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -2442,7 +2442,7 @@ body {
 
   #staff_container {
     width: 100%;
-    height: 50%;
+    height: 100%;
     padding-top: 0px;
     /* background-color: red; */
     margin: 0;
@@ -2570,7 +2570,7 @@ body {
 
   #homePage {
     position: relative;
-    height: 27%;
+    height: 100%;
   }
 
   #welcomeNote {
@@ -2592,7 +2592,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 32%;
+    height: 100%;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -2718,7 +2718,7 @@ body {
   /* STAFF SECTION */
 
   #staff_container {
-    height: 45%;
+    height: 100%;
   }
 }
 
@@ -2754,7 +2754,7 @@ body {
   /*MAIN SECTION STYLING*/
 
   #homePage {
-    height: 25%;
+    height: 100%;
     position: relative;
   }
 
@@ -2778,7 +2778,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 30%;
+    height: 100%;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -2905,7 +2905,7 @@ body {
 
   #staff_container {
     width: 100%;
-    height: 40%;
+    height: 100%;
     padding-top: 0px;
     /* background-color: red; */
     margin: 0;
@@ -3003,7 +3003,7 @@ body {
 
   #homePage {
     position: relative;
-    height: 25%;
+    height: 100%;
   }
 
   #welcomeNote {
@@ -3025,7 +3025,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 30%;
+    height: 100%;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -3151,7 +3151,7 @@ body {
   /* STAFF SECTION  */
 
   #staff_container {
-    height: 40%;
+    height: 100%;
   }
 }
 
@@ -3201,7 +3201,7 @@ body {
 
   #homePage {
     position: relative;
-    height: 20%;
+    height: 100%;
   }
 
   #welcomeNote {
@@ -3223,7 +3223,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 25%;
+    height: 100%;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -3342,7 +3342,7 @@ body {
 
   #staff_container {
     width: 100%;
-    height: 30%;
+    height: 100%;
     padding-top: 0px;
     /* background-color: red; */
     margin: 0;
@@ -3895,5 +3895,17 @@ body {
   .name p {
     width: 100%;
     font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 2560px) {
+  html,
+  body,
+  div,
+  h1,
+  h2,
+  h5,
+  h6 {
+    font-size: 16px;
   }
 }
