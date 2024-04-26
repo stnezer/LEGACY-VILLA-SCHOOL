@@ -806,7 +806,7 @@ body {
     background-position: cover;
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 97%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -844,7 +844,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 100%;
+    height: 70%;
     padding: 10px;
     background: linear-gradient(
       to bottom,
@@ -853,6 +853,8 @@ body {
     );
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .about_txt {
@@ -963,9 +965,12 @@ body {
 
   #staff_container {
     width: 100%;
-    height: 100%;
+    height: 88%;
+    margin-bottom: 5px;
     /* background-color: red; */
     padding-top: 40px;
+    align-items: center;
+    justify-content: space-between;
   }
 
   #staff_container h2 {
@@ -977,7 +982,7 @@ body {
     text-align: center;
     /* color: white; */
     font-family: "Lucida Sans Regular", "Lucida Sans", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      "Lucida Sans Unicode", "Geneva", Verdana, sans-serif;
     font-weight: bold;
   }
 
@@ -1002,26 +1007,29 @@ body {
   }
 
   .staffs {
-    /* width: 18%; */
-    /* height: 20%; */
-    /* margin: 1%; */
-    padding: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
     background-color: rgba(54, 63, 140, 66%);
     border-radius: 5%;
     margin: 5% 2% 0px 1%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
   }
 
   .staffs img {
-    /* width: 100%; */
-    /* height: 200px; */
+    width: 100%;
+    height: 100%;
     max-width: 100%;
     max-height: 100%;
-    border-radius: 5%;
+    border-radius: 0;
   }
 
   .staff_images {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-evenly;
     /* position: relative; */
@@ -1029,20 +1037,21 @@ body {
 
   .name {
     width: 100%;
-    height: 40px;
+    height: 100px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(54, 63, 140, 66%);
     padding: 10px;
+    border-radius: 0;
   }
 
   .name p {
     /* background-color: red; */
 
     width: 100%;
-    font-size: small;
+    font-size: 18px;
     /* margin: 1% auto; */
     display: flex;
     align-items: center;
@@ -1069,6 +1078,10 @@ body {
 
   /*MAIN SECTION STYLING*/
 
+  #homePage {
+    height: 76%;
+  }
+
   #welcomeNote h1 {
     color: rgba(241, 233, 233, 0.772);
     font-size: 45px;
@@ -1084,7 +1097,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 90%;
+    height: 63%;
     font-size: 16px;
     /* background-color: blue; */
     padding: 10px;
@@ -1095,6 +1108,9 @@ body {
     );
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
   }
 
   .about_txt {
@@ -1200,6 +1216,104 @@ body {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
+
+  /* Staff section starts here*/
+
+  #staff_container {
+    width: 100%;
+    height: 75%;
+    margin-bottom: 5px;
+    /* background-color: red; */
+    padding-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #staff_container h2 {
+    margin: 3% auto;
+    /* padding: 10px; */
+    /* background-color: black; */
+    /* display: flex; */
+    font-size: 60px;
+    text-align: center;
+    /* color: white; */
+    font-family: "Lucida Sans Regular", "Lucida Sans", "Lucida Grande",
+      "Lucida Sans Unicode", "Geneva", Verdana, sans-serif;
+    font-weight: bold;
+  }
+
+  #staff_container .staff_text_box {
+    width: 90%;
+    height: 90px;
+    padding: 5px;
+    background-color: rgba(54, 63, 140, 66%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% auto;
+  }
+
+  .staff_text_box h6 {
+    /* margin: 4% auto; */
+    font-size: 35px;
+    font-weight: lighter;
+    font-family: "Lucida Sans Regular", "Lucida Sans", "Lucida Grande",
+      "Lucida Sans Unicode", "Geneva", Verdana, sans-serif;
+  }
+
+  .staffs {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: rgba(54, 63, 140, 66%);
+    border-radius: 5%;
+    margin: 5% 2% 0px 1%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .staffs img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0;
+  }
+
+  .staff_images {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    /* position: relative; */
+  }
+
+  .name {
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(54, 63, 140, 66%);
+    padding: 10px;
+    border-radius: 0;
+  }
+
+  .name p {
+    /* background-color: red; */
+
+    width: 100%;
+    font-size: 18px;
+    /* margin: 1% auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 1565px) {
@@ -1300,7 +1414,7 @@ body {
     background-position: cover;
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 89vh;
+    height: 62%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1338,7 +1452,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 100vh;
+    height: 55%;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -1348,6 +1462,8 @@ body {
     );
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .about_txt {
@@ -1460,6 +1576,11 @@ body {
   .video-text h5 {
     font-size: 15px;
   }
+
+  #staff_container {
+    height: 70%;
+    margin-bottom: 5px;
+  }
 }
 
 @media screen and (max-width: 1332px) {
@@ -1511,7 +1632,7 @@ body {
   /*MAIN SECTION STYLING*/
   #homePage {
     position: relative;
-    height: 90%;
+    height: 51%;
   }
 
   #welcomeNote {
@@ -1548,7 +1669,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 90%;
+    height: 45%;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -1669,6 +1790,104 @@ body {
   .video-text h5 {
     font-size: 15px;
   }
+
+  /* Staff section starts here*/
+
+  #staff_container {
+    width: 100%;
+    height: 55%;
+    /* background-color: red; */
+    padding-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2px;
+  }
+
+  #staff_container h2 {
+    margin: 3% auto;
+    /* padding: 10px; */
+    /* background-color: black; */
+    /* display: flex; */
+    font-size: 40px;
+    text-align: center;
+    /* color: white; */
+    font-family: "Lucida Sans Regular", "Lucida Sans", "Lucida Grande",
+      "Lucida Sans Unicode", "Geneva", Verdana, sans-serif;
+    font-weight: bold;
+  }
+
+  #staff_container .staff_text_box {
+    width: 80%;
+    height: 90px;
+    padding: 2px;
+    background-color: rgba(54, 63, 140, 66%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% auto;
+  }
+
+  .staff_text_box h6 {
+    /* margin: 4% auto; */
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: "Lucida Sans Regular", "Lucida Sans", "Lucida Grande",
+      "Lucida Sans Unicode", "Geneva", Verdana, sans-serif;
+  }
+
+  .staffs {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: rgba(54, 63, 140, 66%);
+    border-radius: 5%;
+    margin: 5% 2% 0px 1%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .staffs img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0;
+  }
+
+  .staff_images {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    /* position: relative; */
+  }
+
+  .name {
+    width: 100%;
+    height: 80px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(54, 63, 140, 66%);
+    padding: 10px;
+    border-radius: 0;
+  }
+
+  .name p {
+    /* background-color: red; */
+
+    width: 100%;
+    font-size: 16px;
+    /* margin: 1% auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 1148px) {
@@ -1699,9 +1918,13 @@ body {
 
   /*MAIN SECTION STYLING*/
 
+  #homePage {
+    height: 35%;
+  }
+
   #welcomeNote {
     position: absolute;
-    top: 240px;
+    top: 200px;
     height: 80px;
   }
 
@@ -1716,7 +1939,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 100vh;
+    height: 40%;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -1843,10 +2066,12 @@ body {
 
   #staff_container {
     width: 100%;
-    /* height: 100%; */
+    height: 72%;
     padding-top: 0px;
     /* background-color: red; */
     margin: 0;
+    align-items: center;
+    justify-content: center;
   }
 
   .staff_images {
@@ -1855,7 +2080,7 @@ body {
   }
 
   #staff_container h2 {
-    margin: 0;
+    margin: 5px;
     padding: 10px;
     font-size: 40px;
     text-align: center;
@@ -1866,6 +2091,7 @@ body {
   }
 
   #staff_container .staff_text_box {
+    margin: 1px auto;
     /* margin: 1px auto;
         padding: 0;
         display: flex;
@@ -1875,7 +2101,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center; */
-    display: none;
+    /* display: none; */
   }
 
   /* .staff_text_box h6 {
@@ -2036,6 +2262,9 @@ body {
 }
 
 @media screen and (max-width: 855px) {
+  #headdiv {
+    height: 4%;
+  }
   /* top div in the header*/
 
   #contact {
@@ -2063,6 +2292,10 @@ body {
 
   /*MAIN SECTION STYLING*/
 
+  #homePage {
+    height: 30%;
+  }
+
   #welcomeNote {
     height: 55px;
     border-radius: 15px;
@@ -2082,7 +2315,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 100vh;
+    height: 35%;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -2204,11 +2437,102 @@ body {
   .video-text h5 {
     font-size: 14px;
   }
+
+  /* Staff section starts here*/
+
+  #staff_container {
+    width: 100%;
+    height: 50%;
+    padding-top: 0px;
+    /* background-color: red; */
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .staff_images {
+    /* background-color: greenyellow; */
+    margin: 0;
+  }
+
+  #staff_container h2 {
+    margin: 10px;
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Lucida Sans Regular", "Lucida Sans", "Lucida Grande",
+      "Lucida Sans Unicode", "Geneva", Verdana, sans-serif;
+    font-weight: bold;
+    /* background-color: green; */
+  }
+
+  #staff_container .staff_text_box {
+    margin: 10px auto;
+    height: 40px;
+    /* margin: 1px auto;
+          padding: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: red;
+          display: flex;
+          align-items: center;
+          justify-content: center; */
+    /* display: none; */
+  }
+
+  .staff_text_box h6 {
+    font-size: 16px;
+    /* width: 90%;
+          overflow: hidden;
+          background-color: blue;   
+          align-items: center;
+          justify-content: center;
+          font-size: 15px;
+          font-weight: lighter;
+          font-family: 'Lucida Sans Regular', 'Lucida Sans',  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  }
+
+  .staffs {
+    width: 25%;
+    /* height: 200px; */
+    margin: 0;
+    background-color: rgba(54, 63, 140, 66%);
+    margin: 2% 5% 0px 0px;
+  }
+
+  .staff_img5,
+  .staff_img4 {
+    margin-top: 8%;
+  }
+
+  .staff_images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 100px;
+    margin: 0;
+  }
+
+  .name {
+    display: flex;
+    height: 40px;
+
+    margin-top: 5px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .name p {
+    width: 100%;
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 765px) {
   #headdiv {
-    height: 8%;
+    height: 4%;
   }
 
   #navOne {
@@ -2246,6 +2570,7 @@ body {
 
   #homePage {
     position: relative;
+    height: 27%;
   }
 
   #welcomeNote {
@@ -2267,7 +2592,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 100vh;
+    height: 32%;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -2389,9 +2714,18 @@ body {
   .video-text h5 {
     font-size: 13px;
   }
+
+  /* STAFF SECTION */
+
+  #staff_container {
+    height: 45%;
+  }
 }
 
 @media screen and (max-width: 681px) {
+  #headdiv {
+    height: 3%;
+  }
   /* top div in the header*/
 
   #contact {
@@ -2420,7 +2754,7 @@ body {
   /*MAIN SECTION STYLING*/
 
   #homePage {
-    height: 80%;
+    height: 25%;
     position: relative;
   }
 
@@ -2444,7 +2778,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 100vh;
+    height: 30%;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -2566,14 +2900,110 @@ body {
   .video-text h5 {
     font-size: 12px;
   }
+
+  /* Staff section starts here*/
+
+  #staff_container {
+    width: 100%;
+    height: 40%;
+    padding-top: 0px;
+    /* background-color: red; */
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .staff_images {
+    /* background-color: greenyellow; */
+    margin: 0;
+  }
+
+  #staff_container h2 {
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Lucida Sans Regular", "Lucida Sans", "Lucida Grande",
+      "Lucida Sans Unicode", "Geneva", Verdana, sans-serif;
+    font-weight: bold;
+    /* background-color: green; */
+  }
+
+  #staff_container .staff_text_box {
+    margin: 10px auto;
+    height: 40px;
+    width: 100%;
+    padding: 2px;
+    /* margin: 1px auto;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center; */
+    /* display: none; */
+  }
+
+  .staff_text_box h6 {
+    font-size: 14px;
+    /* width: 90%;
+            overflow: hidden;
+            background-color: blue;   
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            font-weight: lighter;
+            font-family: 'Lucida Sans Regular', 'Lucida Sans',  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  }
+
+  .staffs {
+    width: 25%;
+    /* height: 200px; */
+    margin: 0;
+    background-color: rgba(54, 63, 140, 66%);
+    margin: 2% 5% 0px 0px;
+  }
+
+  .staff_img5,
+  .staff_img4 {
+    margin-top: 5%;
+  }
+
+  .staff_images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 100px;
+    margin: 0;
+  }
+
+  .name {
+    display: flex;
+    height: 40px;
+
+    margin-top: 5px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .name p {
+    width: 100%;
+    font-size: 10px;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  #headdiv {
+    height: 3%;
+  }
   /*MAIN SECTION STYLING*/
 
   #homePage {
     position: relative;
-    height: 70%;
+    height: 25%;
   }
 
   #welcomeNote {
@@ -2595,7 +3025,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 100vh;
+    height: 30%;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -2717,11 +3147,17 @@ body {
   .video-text h5 {
     font-size: 12px;
   }
+
+  /* STAFF SECTION  */
+
+  #staff_container {
+    height: 40%;
+  }
 }
 
 @media screen and (max-width: 543px) {
   #headdiv {
-    height: 8%;
+    height: 3%;
   }
 
   #navOne {
@@ -2765,6 +3201,7 @@ body {
 
   #homePage {
     position: relative;
+    height: 20%;
   }
 
   #welcomeNote {
@@ -2786,7 +3223,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 100vh;
+    height: 25%;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -2900,11 +3337,30 @@ body {
   .video-text h5 {
     font-size: 10px;
   }
+
+  /* Staff section starts here*/
+
+  #staff_container {
+    width: 100%;
+    height: 30%;
+    padding-top: 0px;
+    /* background-color: red; */
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* MOBILE VIEW RESPONSIVENESS START FROM HERE */
 
 @media screen and (max-width: 450px) {
+  #headdiv {
+    height: 3%;
+  }
+  #navOne,
+  #navTwo {
+    height: 50%;
+  }
   #navLink {
     display: none;
   }
@@ -2955,7 +3411,7 @@ body {
   /*MAIN SECTION STYLING*/
 
   #homePage {
-    height: 52%;
+    height: 18%;
     position: relative;
   }
 
@@ -2979,7 +3435,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 100vh;
+    height: 23%;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -3094,6 +3550,108 @@ body {
   .video-text h5 {
     font-size: 10px;
   }
+
+  /* Staff section starts here*/
+
+  #staff_container {
+    width: 100%;
+    height: 25%;
+    padding-top: 0px;
+    /* background-color: red; */
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .staff_images {
+    /* background-color: greenyellow; */
+    margin: 0;
+  }
+
+  #staff_container h2 {
+    margin: 10px;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Lucida Sans Regular", "Lucida Sans", "Lucida Grande",
+      "Lucida Sans Unicode", "Geneva", Verdana, sans-serif;
+    font-weight: bold;
+    /* background-color: green; */
+  }
+
+  #staff_container .staff_text_box {
+    margin: 10px auto;
+    height: 30px;
+    width: 90%;
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* margin: 1px auto;
+              padding: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: red;
+              display: flex;
+              align-items: center;
+              justify-content: center; */
+    /* display: none; */
+  }
+
+  .staff_text_box h6 {
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* width: 90%;
+              overflow: hidden;
+              background-color: blue;   
+              align-items: center;
+              justify-content: center;
+              font-size: 15px;
+              font-weight: lighter;
+              font-family: 'Lucida Sans Regular', 'Lucida Sans',  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  }
+
+  .staffs {
+    width: 25%;
+    /* height: 200px; */
+    margin: 0;
+    background-color: rgba(54, 63, 140, 66%);
+    margin: 2% 5% 0px 0px;
+  }
+
+  .staff_img5,
+  .staff_img4 {
+    margin-top: 5%;
+  }
+
+  .staff_images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 100px;
+    margin: 0;
+  }
+
+  .name {
+    display: flex;
+    height: 20px;
+    overflow: hidden;
+
+    margin-top: 5px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .name p {
+    width: 100%;
+    font-size: 10px;
+  }
 }
 
 @media screen and (max-width: 336px) {
@@ -3105,7 +3663,7 @@ body {
 
   #homePage {
     position: relative;
-    height: 39%;
+    height: 13%;
   }
 
   #welcomeNote {
@@ -3128,7 +3686,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 100vh;
+    height: 22%;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -3241,6 +3799,101 @@ body {
   }
 
   .video-text h5 {
+    font-size: 10px;
+  }
+
+  /* Staff section starts here*/
+
+  #staff_container {
+    width: 100%;
+    height: 15%;
+    padding-top: 0px;
+    /* background-color: red; */
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .staff_images {
+    /* background-color: greenyellow; */
+    margin: 0;
+  }
+
+  #staff_container h2 {
+    margin: 10px;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    font-family: "Lucida Sans Regular", "Lucida Sans", "Lucida Grande",
+      "Lucida Sans Unicode", "Geneva", Verdana, sans-serif;
+    font-weight: bold;
+    /* background-color: green; */
+  }
+
+  #staff_container .staff_text_box {
+    margin: 10px auto;
+    height: 20px;
+    width: 80%;
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* margin: 1px auto;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: red;
+                display: flex;
+                align-items: center;
+                justify-content: center; */
+    /* display: none; */
+  }
+
+  .staff_text_box h6 {
+    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* width: 90%;
+                overflow: hidden;
+                background-color: blue;   
+                align-items: center;
+                justify-content: center;
+                font-size: 15px;
+                font-weight: lighter;
+                font-family: 'Lucida Sans Regular', 'Lucida Sans',  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  }
+
+  .staffs {
+    width: 25%;
+    /* height: 200px; */
+    margin: 0;
+    background-color: rgba(54, 63, 140, 66%);
+    margin: 2% 5% 0px 0px;
+  }
+
+  .staff_img5,
+  .staff_img4 {
+    margin-top: 5%;
+  }
+
+  .staff_images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 100px;
+    margin: 0;
+  }
+
+  .name {
+    display: none;
+  }
+  .name p {
+    width: 100%;
     font-size: 10px;
   }
 }
