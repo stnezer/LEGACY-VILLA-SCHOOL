@@ -1584,6 +1584,11 @@ body {
 }
 
 @media screen and (max-width: 1332px) {
+  #headdiv {
+    width: 100%;
+    height: 70px;
+    /*background-color: black;*/
+  }
   /*top div in the header*/
 
   #navOne {
@@ -1892,6 +1897,11 @@ body {
 
 @media screen and (max-width: 1148px) {
   /* top div in the header*/
+  #headdiv {
+    width: 100%;
+    height: 70px;
+    /*background-color: black;*/
+  }
 
   .cnl11 {
     display: none;
@@ -2263,7 +2273,7 @@ body {
 
 @media screen and (max-width: 855px) {
   #headdiv {
-    height: 4%;
+    height: 65px;
   }
   /* top div in the header*/
 
@@ -2275,7 +2285,7 @@ body {
 
   #logo {
     padding-left: 30px;
-    margin-top: 10px;
+    margin-top: 0px;
   }
 
   #navLink {
@@ -2293,7 +2303,7 @@ body {
   /*MAIN SECTION STYLING*/
 
   #homePage {
-    height: 100%;
+    height: 80vh;
   }
 
   #welcomeNote {
@@ -2305,17 +2315,17 @@ body {
   }
 
   #welcomeNote h1 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   #welcomeNote p {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   /* About section starts here */
 
   #about_container {
-    height: 100%;
+    height: 80vh;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -2331,7 +2341,7 @@ body {
 
   .about_txt {
     width: 20%;
-    height: 50px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2340,7 +2350,7 @@ body {
   }
 
   .about_txt h3 {
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
   }
 
@@ -2391,27 +2401,27 @@ body {
 
   .statement h3 {
     margin: 0;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .statement p {
     margin: 0;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   /* video Stylling */
 
   .video-container {
-    width: 220px;
-    height: 360px;
+    width: 190px;
+    height: 280px;
     border: 3px solid rgba(54, 63, 140, 100%);
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
   }
 
   .video-container video {
-    width: 210px;
-    height: 300px;
+    width: 180px;
+    height: 240px;
   }
 
   #vPayer {
@@ -2424,7 +2434,7 @@ body {
   .video-text {
     text-align: center;
     width: 100%;
-    height: 45px;
+    height: 30px;
     color: white;
     display: flex;
     justify-content: center;
@@ -2435,7 +2445,7 @@ body {
   }
 
   .video-text h5 {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   /* Staff section starts here*/
@@ -2458,7 +2468,7 @@ body {
   #staff_container h2 {
     margin: 10px;
     padding: 5px;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     font-family: "Lucida Sans Regular", "Lucida Sans", "Lucida Grande",
       "Lucida Sans Unicode", "Geneva", Verdana, sans-serif;
@@ -2494,10 +2504,11 @@ body {
   }
 
   .staffs {
-    width: 25%;
+    width: 22%;
     /* height: 200px; */
     margin: 0;
-    background-color: rgba(54, 63, 140, 66%);
+    /* background-color: rgba(54, 63, 140, 66%); */
+    background-color: aliceblue;
     margin: 2% 5% 0px 0px;
   }
 
@@ -2517,8 +2528,7 @@ body {
 
   .name {
     display: flex;
-    height: 40px;
-
+    height: 30px;
     margin-top: 5px;
     padding: 0;
     align-items: center;
@@ -2526,13 +2536,13 @@ body {
   }
   .name p {
     width: 100%;
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
 @media screen and (max-width: 765px) {
   #headdiv {
-    height: 4%;
+    height: 40px;
   }
 
   #navOne {
@@ -2570,7 +2580,7 @@ body {
 
   #homePage {
     position: relative;
-    height: 100%;
+    height: 70vh;
   }
 
   #welcomeNote {
@@ -2581,18 +2591,18 @@ body {
   }
 
   #welcomeNote h1 {
-    font-size: 15px;
+    font-size: 14px;
     /* color: green; */
   }
 
   #welcomeNote p {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   /* About section starts here */
 
   #about_container {
-    height: 100%;
+    height: 80vh;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -2608,7 +2618,7 @@ body {
 
   .about_txt {
     width: 20%;
-    height: 50px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2617,7 +2627,7 @@ body {
   }
 
   .about_txt h3 {
-    font-size: 15px;
+    font-size: 14px;
     margin: 0;
   }
 
@@ -2668,27 +2678,30 @@ body {
 
   .statement h3 {
     margin: 0;
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .statement p {
     margin: 0;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   /* video Stylling */
 
   .video-container {
-    width: 195px;
-    height: 335px;
+    width: 170px;
+    /* height: 280px; */
     border: 2px solid rgba(54, 63, 140, 100%);
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
+    align-items: center;
+    justify-content: center;
   }
 
   .video-container video {
-    width: 190px;
-    height: 280px;
+    width: 165px;
+    /* height: 280px; */
+    margin: 0;
   }
 
   #vPayer {
@@ -2701,7 +2714,7 @@ body {
   .video-text {
     text-align: center;
     width: 100%;
-    height: 45px;
+    height: 30px;
     color: white;
     display: flex;
     justify-content: center;
@@ -2712,19 +2725,24 @@ body {
   }
 
   .video-text h5 {
-    font-size: 13px;
+    font-size: 10px;
   }
 
   /* STAFF SECTION */
 
   #staff_container {
-    height: 100%;
+    height: 83vh;
+  }
+
+  .staff_img5,
+  .staff_img4 {
+    margin-top: 4%;
   }
 }
 
 @media screen and (max-width: 681px) {
   #headdiv {
-    height: 3%;
+    height: 30px;
   }
   /* top div in the header*/
 
@@ -2736,7 +2754,7 @@ body {
 
   #logo {
     padding-left: 30px;
-    margin-top: 10px;
+    margin-top: 7px;
   }
 
   #navLink {
@@ -2754,21 +2772,20 @@ body {
   /*MAIN SECTION STYLING*/
 
   #homePage {
-    height: 100%;
+    height: 60vh;
     position: relative;
   }
 
   #welcomeNote {
     position: absolute;
     top: 140px;
-
     height: 55px;
     border-radius: 15px;
     line-height: 22px;
   }
 
   #welcomeNote h1 {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   #welcomeNote p {
@@ -2778,7 +2795,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 100%;
+    height: 60vh;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -2803,7 +2820,7 @@ body {
   }
 
   .about_txt h3 {
-    font-size: 15px;
+    font-size: 14px;
     margin: 0;
   }
 
@@ -2854,7 +2871,7 @@ body {
 
   .statement h3 {
     margin: 0;
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .statement p {
@@ -2865,16 +2882,16 @@ body {
   /* video Stylling */
 
   .video-container {
-    width: 170px;
-    height: 300px;
+    width: 150px;
+    height: 250px;
     border: 2px solid rgba(54, 63, 140, 100%);
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
   }
 
   .video-container video {
-    width: 165px;
-    height: 250px;
+    width: 145px;
+    height: 200px;
   }
 
   #vPayer {
@@ -2898,14 +2915,14 @@ body {
   }
 
   .video-text h5 {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   /* Staff section starts here*/
 
   #staff_container {
     width: 100%;
-    height: 100%;
+    height: 85vh;
     padding-top: 0px;
     /* background-color: red; */
     margin: 0;
@@ -2921,7 +2938,7 @@ body {
   #staff_container h2 {
     margin: 10px;
     padding: 5px;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     font-family: "Lucida Sans Regular", "Lucida Sans", "Lucida Grande",
       "Lucida Sans Unicode", "Geneva", Verdana, sans-serif;
@@ -2931,8 +2948,8 @@ body {
 
   #staff_container .staff_text_box {
     margin: 10px auto;
-    height: 40px;
-    width: 100%;
+    height: 30px;
+    width: 80%;
     padding: 2px;
     /* margin: 1px auto;
             padding: 0;
@@ -2947,7 +2964,7 @@ body {
   }
 
   .staff_text_box h6 {
-    font-size: 14px;
+    font-size: 12px;
     /* width: 90%;
             overflow: hidden;
             background-color: blue;   
@@ -2962,13 +2979,13 @@ body {
     width: 25%;
     /* height: 200px; */
     margin: 0;
-    background-color: rgba(54, 63, 140, 66%);
+    /* background-color: rgba(54, 63, 140, 66%); */
     margin: 2% 5% 0px 0px;
   }
 
   .staff_img5,
   .staff_img4 {
-    margin-top: 5%;
+    margin-top: 4%;
   }
 
   .staff_images {
@@ -2982,10 +2999,12 @@ body {
 
   .name {
     display: flex;
-    height: 40px;
-
-    margin-top: 5px;
+    height: 30px;
+    margin-top: 3px;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
     align-items: center;
     justify-content: center;
   }
@@ -2997,13 +3016,13 @@ body {
 
 @media screen and (max-width: 600px) {
   #headdiv {
-    height: 3%;
+    height: 30px;
   }
   /*MAIN SECTION STYLING*/
 
   #homePage {
     position: relative;
-    height: 100%;
+    height: 60vh;
   }
 
   #welcomeNote {
@@ -3025,7 +3044,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 100%;
+    height: 60vh;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -3045,12 +3064,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgba(54, 63, 140, 100%);
+    border: 1px solid rgba(54, 63, 140, 100%);
     margin: 2% auto;
   }
 
   .about_txt h3 {
-    font-size: 15px;
+    font-size: 12px;
     margin: 0;
   }
 
@@ -3071,7 +3090,7 @@ body {
 
   .statement {
     margin-top: 30px;
-    line-height: 25px;
+    line-height: 20px;
     /* background-color: yellow; */
     width: 100%;
     /* font-size: 1000px; */
@@ -3081,27 +3100,27 @@ body {
     content: "";
     display: block;
     width: 100%;
-    height: 2px;
+    height: 1px;
     background-color: rgba(54, 63, 140, 100%);
     /* margin: 40px 0px; */
     position: absolute;
-    top: 55px;
+    top: 50px;
   }
 
   .vision_text::after {
     content: "";
     display: block;
     width: 100%;
-    height: 2px;
+    height: 1px;
     background-color: rgba(54, 63, 140, 100%);
     /* margin: 40px 0px; */
     position: absolute;
-    top: 160px;
+    top: 140px;
   }
 
   .statement h3 {
     margin: 0;
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .statement p {
@@ -3112,16 +3131,16 @@ body {
   /* video Stylling */
 
   .video-container {
-    width: 170px;
-    height: 300px;
-    border: 2px solid rgba(54, 63, 140, 100%);
+    width: 142px;
+    height: 225px;
+    border: 1px solid rgba(54, 63, 140, 100%);
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
   }
 
   .video-container video {
-    width: 165px;
-    height: 250px;
+    width: 140px;
+    height: 190px;
   }
 
   #vPayer {
@@ -3134,7 +3153,7 @@ body {
   .video-text {
     text-align: center;
     width: 100%;
-    height: 40px;
+    height: 30px;
     color: white;
     display: flex;
     justify-content: center;
@@ -3145,19 +3164,19 @@ body {
   }
 
   .video-text h5 {
-    font-size: 12px;
+    font-size: 8px;
   }
 
   /* STAFF SECTION  */
 
   #staff_container {
-    height: 100%;
+    height: 70vh;
   }
 }
 
 @media screen and (max-width: 543px) {
   #headdiv {
-    height: 3%;
+    height: 30px;
   }
 
   #navOne {
@@ -3201,7 +3220,7 @@ body {
 
   #homePage {
     position: relative;
-    height: 100%;
+    height: 50vh;
   }
 
   #welcomeNote {
@@ -3223,7 +3242,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 100%;
+    height: 50vh;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -3243,12 +3262,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgba(54, 63, 140, 100%);
+    border: 1px solid rgba(54, 63, 140, 100%);
     margin: 2% auto;
   }
 
   .about_txt h3 {
-    font-size: 15px;
+    font-size: 12px;
     margin: 0;
   }
 
@@ -3289,29 +3308,29 @@ body {
     text-decoration: underline;
     text-decoration-color: rgba(54, 63, 140, 100%);
     text-underline-offset: 5px;
-    text-decoration-thickness: 1.5px;
+    text-decoration-thickness: 1px;
   }
 
   .statement p {
     width: 100%;
     margin: 0;
-    font-size: 10px;
+    font-size: 8px;
     text-wrap: pretty;
   }
 
   /* video Stylling */
 
   .video-container {
-    width: 150px;
-    height: 250px;
-    border: 2px solid rgba(54, 63, 140, 100%);
+    width: 120px;
+    height: 180px;
+    border: 1px solid rgba(54, 63, 140, 100%);
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
   }
 
   .video-container video {
-    width: 145px;
-    height: 210px;
+    width: 118px;
+    height: 155px;
   }
 
   #vPayer {
@@ -3324,7 +3343,7 @@ body {
   .video-text {
     text-align: center;
     width: 100%;
-    height: 30px;
+    height: 20px;
     color: white;
     display: flex;
     justify-content: center;
@@ -3335,14 +3354,14 @@ body {
   }
 
   .video-text h5 {
-    font-size: 10px;
+    font-size: 8px;
   }
 
   /* Staff section starts here*/
 
   #staff_container {
     width: 100%;
-    height: 100%;
+    height: 60vh;
     padding-top: 0px;
     /* background-color: red; */
     margin: 0;
@@ -3355,7 +3374,7 @@ body {
 
 @media screen and (max-width: 450px) {
   #headdiv {
-    height: 3%;
+    height: 35px;
   }
   #navOne,
   #navTwo {
@@ -3366,7 +3385,7 @@ body {
   }
 
   #navOne i {
-    font-size: x-small;
+    font-size: 7px;
   }
 
   #navTwo {
@@ -3375,7 +3394,7 @@ body {
 
   #menu {
     position: absolute;
-    right: 10px;
+    right: 15px;
     top: 0px;
     z-index: 1;
     display: flex;
@@ -3386,9 +3405,9 @@ body {
 
   #menuIcon {
     display: flex;
-    height: 10%;
+    height: 12%;
     /* width: 2%; */
-    /* background-color: red; */
+    background-color: none;
     /* margin-right: 10px; */
     /* padding: 2px; */
   }
@@ -3397,7 +3416,7 @@ body {
     font-size: 15px;
     padding: 0;
     margin: 0;
-    margin-top: 4px;
+    margin-top: 1px;
   }
 
   #menu:hover #navLink {
@@ -3411,7 +3430,7 @@ body {
   /*MAIN SECTION STYLING*/
 
   #homePage {
-    height: 100%;
+    height: 52vh;
     position: relative;
   }
 
@@ -3421,11 +3440,11 @@ body {
     height: 35px;
     border-radius: 10px;
     line-height: 15px;
-    width: 90%;
+    width: 80%;
   }
 
   #welcomeNote h1 {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   #welcomeNote p {
@@ -3435,7 +3454,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 100%;
+    height: 65vh;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -3455,12 +3474,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgba(54, 63, 140, 100%);
-    margin: 2% auto;
+    border: 1px solid rgba(54, 63, 140, 100%);
+    margin: 1% auto;
   }
 
   .about_txt h3 {
-    font-size: 12px;
+    font-size: 10px;
     margin: 0;
   }
 
@@ -3480,8 +3499,8 @@ body {
   }
 
   .statement {
-    margin-top: 30px;
-    line-height: 15px;
+    margin-top: 20px;
+    line-height: 12px;
     /* background-color: yellow; */
     width: 100%;
     /* font-size: 1000px; */
@@ -3497,34 +3516,34 @@ body {
 
   .statement h3 {
     margin: 0;
-    font-size: 12px;
+    font-size: 10px;
     text-decoration: underline;
     text-decoration-color: rgba(54, 63, 140, 100%);
     text-underline-offset: 5px;
-    text-decoration-thickness: 1.5px;
+    text-decoration-thickness: 1px;
   }
 
   .statement p {
     width: 100%;
     margin-top: 15px;
-    font-size: 10px;
+    font-size: 8px;
     text-wrap: pretty;
   }
 
   /* video Stylling */
 
   .video-container {
-    margin-top: 15px;
-    width: 120px;
-    height: 210px;
-    border: 2px solid rgba(54, 63, 140, 100%);
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
+    margin-top: 10px;
+    width: 100px;
+    height: 160px;
+    border: 1px solid rgba(54, 63, 140, 100%);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
 
   .video-container video {
-    width: 115px;
-    height: 170px;
+    width: 100%;
+    height: 130px;
   }
 
   #vPayer {
@@ -3537,25 +3556,25 @@ body {
   .video-text {
     text-align: center;
     width: 100%;
-    height: 30px;
+    height: 25px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     background: rgba(54, 63, 140, 100%);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
 
   .video-text h5 {
-    font-size: 10px;
+    font-size: 7px;
   }
 
   /* Staff section starts here*/
 
   #staff_container {
     width: 100%;
-    height: 100%;
+    height: 70vh;
     padding-top: 0px;
     /* background-color: red; */
     margin: 0;
@@ -3571,7 +3590,7 @@ body {
   #staff_container h2 {
     margin: 10px;
     padding: 5px;
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
     font-family: "Lucida Sans Regular", "Lucida Sans", "Lucida Grande",
       "Lucida Sans Unicode", "Geneva", Verdana, sans-serif;
@@ -3580,8 +3599,8 @@ body {
   }
 
   #staff_container .staff_text_box {
-    margin: 10px auto;
-    height: 30px;
+    margin: 5px auto;
+    height: 25px;
     width: 90%;
     padding: 2px;
     display: flex;
@@ -3601,7 +3620,7 @@ body {
   }
 
   .staff_text_box h6 {
-    font-size: 12px;
+    font-size: 8px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -3620,13 +3639,14 @@ body {
     width: 25%;
     /* height: 200px; */
     margin: 0;
-    background-color: rgba(54, 63, 140, 66%);
+    /* background-color: rgba(54, 63, 140, 66%); */
+    background-color: aliceblue;
     margin: 2% 5% 0px 0px;
   }
 
   .staff_img5,
   .staff_img4 {
-    margin-top: 5%;
+    margin-top: 3%;
   }
 
   .staff_images {
@@ -3643,27 +3663,37 @@ body {
     height: 20px;
     overflow: hidden;
 
-    margin-top: 5px;
+    margin-top: 2px;
     padding: 0;
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
   .name p {
     width: 100%;
-    font-size: 10px;
+    height: 100%;
+    font-size: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 @media screen and (max-width: 336px) {
   #navOne i {
-    font-size: xx-small;
+    font-size: 7px;
   }
 
   /*MAIN SECTION STYLING*/
 
   #homePage {
     position: relative;
-    height: 100%;
+    height: 40vh;
   }
 
   #welcomeNote {
@@ -3686,7 +3716,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 100%;
+    height: 55vh;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -3706,12 +3736,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgba(54, 63, 140, 100%);
-    margin: 2% auto;
+    border: 1px solid rgba(54, 63, 140, 100%);
+    margin: 1% auto;
   }
 
   .about_txt h3 {
-    font-size: 12px;
+    font-size: 10px;
     margin: 0;
   }
 
@@ -3731,8 +3761,8 @@ body {
   }
 
   .statement {
-    margin-top: 30px;
-    line-height: 15px;
+    margin-top: 20px;
+    line-height: 12px;
     /* background-color: yellow; */
     width: 100%;
     /* font-size: 1000px; */
@@ -3748,34 +3778,34 @@ body {
 
   .statement h3 {
     margin: 0;
-    font-size: 12px;
+    font-size: 10px;
     text-decoration: underline;
     text-decoration-color: rgba(54, 63, 140, 100%);
     text-underline-offset: 5px;
-    text-decoration-thickness: 1.5px;
+    text-decoration-thickness: 1px;
   }
 
   .statement p {
     width: 100%;
     margin-top: 15px;
-    font-size: 10px;
+    font-size: 8px;
     text-wrap: pretty;
   }
 
   /* video Stylling */
 
   .video-container {
-    margin-top: 15px;
-    width: 120px;
-    height: 210px;
-    border: 2px solid rgba(54, 63, 140, 100%);
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
+    margin-top: 10px;
+    width: 100px;
+    height: 160px;
+    border: 1px solid rgba(54, 63, 140, 100%);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
 
   .video-container video {
-    width: 115px;
-    height: 170px;
+    width: 100%;
+    height: 130px;
   }
 
   #vPayer {
@@ -3788,25 +3818,25 @@ body {
   .video-text {
     text-align: center;
     width: 100%;
-    height: 30px;
+    height: 25px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     background: rgba(54, 63, 140, 100%);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
 
   .video-text h5 {
-    font-size: 10px;
+    font-size: 7px;
   }
 
   /* Staff section starts here*/
 
   #staff_container {
     width: 100%;
-    height: 100%;
+    height: 40vh;
     padding-top: 0px;
     /* background-color: red; */
     margin: 0;
@@ -3898,7 +3928,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 2560px) {
+/* @media only screen and (min-width: 600px) and (max-width: 2560px) {
   html,
   body,
   div,
@@ -3919,5 +3949,15 @@ body {
   h5,
   h6 {
     font-size: 14px;
+  }
+} */
+
+@media screen and (orientation: landscape) {
+  body {
+    /* Lock rotation */
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
   }
 }
