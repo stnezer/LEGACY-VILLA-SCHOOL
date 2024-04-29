@@ -3373,6 +3373,10 @@ body {
 /* MOBILE VIEW RESPONSIVENESS START FROM HERE */
 
 @media screen and (max-width: 450px) {
+  #homePageSec {
+    height: 55vh;
+  }
+
   #headdiv {
     height: 35px;
   }
@@ -3576,8 +3580,8 @@ body {
 
   #staff_container {
     width: 100%;
-    height: 63vh;
-    padding-top: 0px;
+    height: 100vh;
+    padding: 0;
     /* background-color: red; */
     margin: 0;
     align-items: center;
@@ -3638,12 +3642,17 @@ body {
   }
 
   .staffs {
-    width: 25%;
+    width: 27%;
+    max-width: 100%;
     /* height: 200px; */
     margin: 0;
     /* background-color: rgba(54, 63, 140, 66%); */
     background-color: aliceblue;
     margin: 2% 5% 0px 0px;
+  }
+
+  .staffs img {
+    width: 100%;
   }
 
   .staff_img5,
@@ -3656,7 +3665,8 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 0px 100px;
+    width: 100%;
+    padding: 0px 0px;
     margin: 0;
   }
 
@@ -3687,6 +3697,9 @@ body {
 }
 
 @media screen and (max-width: 420px) {
+  #homePageSec {
+    height: 50vh;
+  }
   #homePage {
     height: 45vh;
     position: relative;
@@ -3705,6 +3718,9 @@ body {
 }
 
 @media screen and (max-width: 400px) {
+  #homePageSec {
+    height: 47vh;
+  }
   #homePage {
     height: 40vh;
     position: relative;
@@ -3737,6 +3753,9 @@ body {
 }
 
 @media screen and (max-width: 336px) {
+  #homePageSec {
+    height: 40vh;
+  }
   #navOne i {
     font-size: 7px;
   }
@@ -3888,8 +3907,8 @@ body {
 
   #staff_container {
     width: 100%;
-    height: 37vh;
-    padding-top: 0px;
+    height: 80vh;
+    padding: 0;
     /* background-color: red; */
     margin: 0;
     align-items: center;
@@ -3904,7 +3923,7 @@ body {
   #staff_container h2 {
     margin: 10px;
     padding: 5px;
-    font-size: 14px;
+    font-size: 10px;
     text-align: center;
     font-family: "Lucida Sans Regular", "Lucida Sans", "Lucida Grande",
       "Lucida Sans Unicode", "Geneva", Verdana, sans-serif;
@@ -3913,53 +3932,59 @@ body {
   }
 
   #staff_container .staff_text_box {
-    margin: 10px auto;
-    height: 20px;
-    width: 80%;
+    margin: 5px auto;
+    height: 25px;
+    width: 90%;
     padding: 2px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     /* margin: 1px auto;
-                padding: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: red;
-                display: flex;
-                align-items: center;
-                justify-content: center; */
+              padding: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: red;
+              display: flex;
+              align-items: center;
+              justify-content: center; */
     /* display: none; */
   }
 
   .staff_text_box h6 {
-    font-size: 10px;
+    font-size: 7px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     /* width: 90%;
-                overflow: hidden;
-                background-color: blue;   
-                align-items: center;
-                justify-content: center;
-                font-size: 15px;
-                font-weight: lighter;
-                font-family: 'Lucida Sans Regular', 'Lucida Sans',  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+              overflow: hidden;
+              background-color: blue;   
+              align-items: center;
+              justify-content: center;
+              font-size: 15px;
+              font-weight: lighter;
+              font-family: 'Lucida Sans Regular', 'Lucida Sans',  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
   }
 
   .staffs {
-    width: 25%;
+    width: 27%;
+    max-width: 100%;
     /* height: 200px; */
     margin: 0;
-    background-color: rgba(54, 63, 140, 66%);
+    /* background-color: rgba(54, 63, 140, 66%); */
+    background-color: aliceblue;
     margin: 2% 5% 0px 0px;
+  }
+
+  .staffs img {
+    width: 100%;
   }
 
   .staff_img5,
   .staff_img4 {
-    margin-top: 5%;
+    margin-top: 3%;
   }
 
   .staff_images {
@@ -3967,16 +3992,34 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 0px 100px;
+    width: 100%;
+    padding: 0px 0px;
     margin: 0;
   }
 
   .name {
-    display: none;
+    display: flex;
+    height: 20px;
+    overflow: hidden;
+
+    margin-top: 2px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
   .name p {
     width: 100%;
-    font-size: 10px;
+    height: 100%;
+    font-size: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 }
 
