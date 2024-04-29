@@ -3430,7 +3430,7 @@ body {
   /*MAIN SECTION STYLING*/
 
   #homePage {
-    height: 52vh;
+    height: 50vh;
     position: relative;
   }
 
@@ -3454,7 +3454,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 65vh;
+    height: 50vh;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -3574,7 +3574,7 @@ body {
 
   #staff_container {
     width: 100%;
-    height: 70vh;
+    height: 63vh;
     padding-top: 0px;
     /* background-color: red; */
     margin: 0;
@@ -3684,6 +3684,38 @@ body {
   }
 }
 
+@media screen and (max-width: 400px) {
+  #homePage {
+    height: 40vh;
+    position: relative;
+  }
+
+  #about_container {
+    height: 45vh;
+    /* background-color: blue; */
+    padding: 5px;
+    background: linear-gradient(
+      to bottom,
+      rgba(54, 63, 140, 0),
+      rgba(16, 3, 129, 0.3)
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #staff_container {
+    width: 100%;
+    height: 55vh;
+    padding-top: 0px;
+    /* background-color: red; */
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 336px) {
   #navOne i {
     font-size: 7px;
@@ -3693,7 +3725,7 @@ body {
 
   #homePage {
     position: relative;
-    height: 40vh;
+    height: 35vh;
   }
 
   #welcomeNote {
@@ -3716,7 +3748,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 55vh;
+    height: 48vh;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -3836,7 +3868,7 @@ body {
 
   #staff_container {
     width: 100%;
-    height: 40vh;
+    height: 37vh;
     padding-top: 0px;
     /* background-color: red; */
     margin: 0;
@@ -3952,12 +3984,12 @@ body {
   }
 } */
 
-@media screen and (orientation: landscape) {
+/* @media screen and (orientation: landscape) {
   body {
-    /* Lock rotation */
+    /* Lock rotation 
     overflow: hidden;
     position: fixed;
     width: 100%;
     height: 100%;
   }
-}
+} */
