@@ -3432,6 +3432,7 @@ body {
   #homePage {
     height: 50vh;
     position: relative;
+    margin: 0;
   }
 
   #welcomeNote {
@@ -3454,7 +3455,7 @@ body {
   /* About section starts here */
 
   #about_container {
-    height: 50vh;
+    height: 48vh;
     /* background-color: blue; */
     padding: 5px;
     background: linear-gradient(
@@ -3466,6 +3467,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0;
   }
 
   .about_txt {
@@ -3679,6 +3681,24 @@ body {
     font-size: 7px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #homePage {
+    height: 45vh;
+    position: relative;
+    margin: 0;
+  }
+
+  #staff_container {
+    width: 100%;
+    height: 58vh;
+    padding-top: 0px;
+    /* background-color: red; */
+    margin: 0;
     align-items: center;
     justify-content: center;
   }
