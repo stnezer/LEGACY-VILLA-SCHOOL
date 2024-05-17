@@ -31,317 +31,326 @@
     />
     <!-- BOOSTRAP LINK -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> -->
+
+    <!-- script to make the page not to rotate -->
+    <script src="./portrait.js"></script>
     <title>LEGACY VILLA SCHOOL</title>
   </head>
   <body>
-    <!-- HEADER SECTION, CONTAIN NAV BAR AND LOGO-->
+    <div id="root">
+      <!-- HEADER SECTION, CONTAIN NAV BAR AND LOGO-->
 
-    <header id="headdiv">
-      <nav id="navOne">
-        <div id="contact">
-          <a href="" class="cnl1 cnl11"
-            ><i class="fa-regular fa-clock fa"></i
-            ><span>8:00am - 4pm daily</span></a
-          >
-          <a href="" class="cnl1 cnl12"
-            ><i class="fa-solid fa-phone fa"></i><span>+2348065519033</span></a
-          >
-          <a href="" class="cnl1 cnl13"
-            ><i class="fa-solid fa-location-dot fa"></i
-            ><span
-              >10 Ifelodun street, off Nureni Yusuf Drive Alagbado, Lagos.</span
-            ></a
-          >
-        </div>
-        <div id="socialMedia">
-          <a href=""><i class="fa-brands fa-facebook fa"></i></a>
-          <a href=""><i class="fa-brands fa-instagram fa"></i></a>
-          <a href=""><i class="fa-brands fa-threads fa"></i></a>
-          <a href=""><i class="fa-brands fa-linkedin fa"></i></a>
-        </div>
-      </nav>
-      <nav id="navTwo">
-        <div id="logo">
-          <img src="legacydocs/studentimg/LEGACY VILLA.jpg" alt="logo" />
-        </div>
-
-        <div id="menu">
-          <a id="menuIcon" href=""
-            ><i class="fa fa-bars" aria-hidden="true"></i>
-          </a>
-          <nav id="navLink">
-            <a href="#headdiv">HOME</a>
-            <a href="#about_container">ABOUT US</a>
-            <a href="#staff_container">MEET OUR STAFF</a>
-            <a href="#Explore-project-section">OUR PROJECT</a>
-            <a href="#gallery">GALLERY</a>
-            <a href="#footer">CONTACT US</a>
-          </nav>
-        </div>
-      </nav>
-    </header>
-
-    <!---START OF MAIN SECTION, THE LANDING PAGE-->
-
-    <main id="homePage">
-      <div id="welcomeNote">
-        <h1 class="welcome note">
-          <span>Welcome To </span>Legacy Villa High School
-        </h1>
-        <p class="motto note"><span>MOTTO: </span>KNOWLEDGE IS LIGHT</p>
-      </div>
-    </main>
-
-    <!-- About us section starts here -->
-
-    <section id="about_container">
-      <div class="about_txt acchild">
-        <h3>About us</h3>
-      </div>
-      <div class="about-content acchild">
-        <div class="missionNvision contentchild">
-          <div class="mision-text statement">
-            <h3>Mission Statement:</h3>
-            <p>
-              Creating an enabling environment <br />
-              that bring about a behavioral change to self reliance
-            </p>
+      <header id="headdiv">
+        <nav id="navOne">
+          <div id="contact">
+            <a href="" class="cnl1 cnl11"
+              ><i class="fa-regular fa-clock fa"></i
+              ><span>8:00am - 4pm daily</span></a
+            >
+            <a href="" class="cnl1 cnl12"
+              ><i class="fa-solid fa-phone fa"></i
+              ><span>+2348065519033</span></a
+            >
+            <a href="" class="cnl1 cnl13"
+              ><i class="fa-solid fa-location-dot fa"></i
+              ><span
+                >10 Ifelodun street, off Nureni Yusuf Drive Alagbado,
+                Lagos.</span
+              ></a
+            >
           </div>
-          <div class="vision_text statement">
-            <h3>Vision Statement:</h3>
-            <p>
-              Developing a total child <br />
-              who is able to attain the ultimate height in life.
-            </p>
+          <div id="socialMedia">
+            <a href=""><i class="fa-brands fa-facebook fa"></i></a>
+            <a href=""><i class="fa-brands fa-instagram fa"></i></a>
+            <a href=""><i class="fa-brands fa-threads fa"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin fa"></i></a>
+          </div>
+        </nav>
+        <nav id="navTwo">
+          <div id="logo">
+            <img src="legacydocs/studentimg/LEGACY VILLA.jpg" alt="logo" />
+          </div>
+
+          <div id="menu">
+            <a id="menuIcon" href=""
+              ><i class="fa fa-bars" aria-hidden="true"></i>
+            </a>
+            <nav id="navLink">
+              <a href="#headdiv">HOME</a>
+              <a href="#about_container">ABOUT US</a>
+              <a href="#staff_container">MEET OUR STAFF</a>
+              <a href="#Explore-project-section">OUR PROJECT</a>
+              <a href="#gallery">GALLERY</a>
+              <a href="#footer">CONTACT US</a>
+            </nav>
+          </div>
+        </nav>
+      </header>
+
+      <!---START OF MAIN SECTION, THE LANDING PAGE-->
+
+      <main id="homePage">
+        <div id="welcomeNote">
+          <h1 class="welcome note">
+            <span>Welcome To </span>Legacy Villa High School
+          </h1>
+          <p class="motto note"><span>MOTTO: </span>KNOWLEDGE IS LIGHT</p>
+        </div>
+      </main>
+
+      <!-- About us section starts here -->
+
+      <section id="about_container">
+        <div class="about_txt acchild">
+          <h3>About us</h3>
+        </div>
+        <div class="about-content acchild">
+          <div class="missionNvision contentchild">
+            <div class="mision-text statement">
+              <h3>Mission Statement:</h3>
+              <p>
+                Creating an enabling environment <br />
+                that bring about a behavioral change to self reliance
+              </p>
+            </div>
+            <div class="vision_text statement">
+              <h3>Vision Statement:</h3>
+              <p>
+                Developing a total child <br />
+                who is able to attain the ultimate height in life.
+              </p>
+            </div>
+          </div>
+          <div class="video-container contentchild">
+            <video
+              id="vPlayer"
+              controls
+              poster="./legacydocs/videos/propritress cover img.jpg"
+            >
+              <source src="./legacydocs/videos/speech.mp4" type="video/mp4" />
+            </video>
+            <div class="video-text">
+              <h5>Mrs. M.k ADAMA<br />(PROPRIETRESS)</h5>
+            </div>
           </div>
         </div>
-        <div class="video-container contentchild">
-          <video
-            id="vPlayer"
-            controls
-            poster="./legacydocs/videos/propritress cover img.jpg"
-          >
-            <source src="./legacydocs/videos/speech.mp4" type="video/mp4" />
+      </section>
+
+      <!-- Staff section starts here -->
+
+      <section id="staff_container">
+        <h2>MEET OUR STAFF</h2>
+        <div class="staff_text_box">
+          <h6>
+            Meet the passionate and dedicated staff committed to excellence
+          </h6>
+        </div>
+        <div class="staff_images">
+          <figure class="staff_img1 staffs">
+            <img src="legacydocs/staffs_img/staff11.jpg" alt="" />
+            <figcaption class="staff_img1_name name">
+              <p>Mr. Immanuel Okereke<br />(PRINCIPAL)</p>
+            </figcaption>
+          </figure>
+          <figure class="staff_img2 staffs">
+            <img src="legacydocs/staffs_img/staff22.png" alt="" />
+            <figcaption class="staff_img2_name name">
+              <p>Mrs. Majin Gloria<br />(ADMIN PERSONNEL)</p>
+            </figcaption>
+          </figure>
+          <figure class="staff_img3 staffs">
+            <img src="legacydocs/staffs_img/staff66.png" alt="" />
+            <figcaption class="staff_img3_name name">
+              <p>Mrs. Damilola Sunmola<br />(VICE PRINCIPAL)</p>
+            </figcaption>
+          </figure>
+          <figure class="staff_img4 staffs">
+            <img src="legacydocs/staffs_img/staff33.png" alt="" />
+            <figcaption class="staff_img4_name name">
+              <p>Mrs. Ayeni Olufunke<br />(H.M ACADEMICS)</p>
+            </figcaption>
+          </figure>
+          <figure class="staff_img5 staffs">
+            <img src="legacydocs/staffs_img/staff55.png" alt="" />
+            <figcaption class="staff_img5_name name">
+              <p>Mrs. Mayowa Ojelade<br />(H.M ADMIN)</p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <!-- staff section Ends here -->
+
+      <!-- Project Display starts here -->
+
+      <section id="Explore-project-section">
+        <div class="primary-project">
+          <video controls poster="./legacydocs/videos/PRI PROJECT.jpg">
+            <source src="./legacydocs/videos/tollgate.mp4" />
           </video>
-          <div class="video-text">
-            <h5>Mrs. M.k ADAMA<br />(PROPRIETRESS)</h5>
+        </div>
+        <div class="Explore-text">
+          <h2>Explore</h2>
+          <h4>OUR PROJECTS</h4>
+        </div>
+        <div id="all-project">
+          <div class="project1 pdisplay">
+            <img
+              src="./legacydocs/studentimg/PRI_PROJECT_IMG-removebg-preview.png"
+              alt=""
+              class="projectimg project1img"
+            />
+          </div>
+          <div class="project2 pdisplay">
+            <img
+              src="./legacydocs/studentimg/SS PROJECT PIX.jpg"
+              alt=""
+              class="projectimg project2img"
+            />
+          </div>
+          <div class="project3 pdisplay">
+            <img
+              src="./legacydocs/studentimg/SS PRO IMG 2.png"
+              alt=""
+              class="projectimg project3img"
+            />
+          </div>
+          <div class="project4 pdisplay">
+            <img
+              src="./legacydocs/studentimg/JSPROJECT-removebg-preview.png"
+              alt=""
+              class="projectimg project4img"
+            />
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Staff section starts here -->
-
-    <section id="staff_container">
-      <h2>MEET OUR STAFF</h2>
-      <div class="staff_text_box">
-        <h6>Meet the passionate and dedicated staff committed to excellence</h6>
-      </div>
-      <div class="staff_images">
-        <figure class="staff_img1 staffs">
-          <img src="legacydocs/staffs_img/staff11.jpg" alt="" />
-          <figcaption class="staff_img1_name name">
-            <p>Mr. Immanuel Okereke<br />(PRINCIPAL)</p>
-          </figcaption>
-        </figure>
-        <figure class="staff_img2 staffs">
-          <img src="legacydocs/staffs_img/staff22.png" alt="" />
-          <figcaption class="staff_img2_name name">
-            <p>Mrs. Majin Gloria<br />(ADMIN PERSONNEL)</p>
-          </figcaption>
-        </figure>
-        <figure class="staff_img3 staffs">
-          <img src="legacydocs/staffs_img/staff66.png" alt="" />
-          <figcaption class="staff_img3_name name">
-            <p>Mrs. Damilola Sunmola<br />(VICE PRINCIPAL)</p>
-          </figcaption>
-        </figure>
-        <figure class="staff_img4 staffs">
-          <img src="legacydocs/staffs_img/staff33.png" alt="" />
-          <figcaption class="staff_img4_name name">
-            <p>Mrs. Ayeni Olufunke<br />(H.M ACADEMICS)</p>
-          </figcaption>
-        </figure>
-        <figure class="staff_img5 staffs">
-          <img src="legacydocs/staffs_img/staff55.png" alt="" />
-          <figcaption class="staff_img5_name name">
-            <p>Mrs. Mayowa Ojelade<br />(H.M ADMIN)</p>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-    <!-- staff section Ends here -->
-
-    <!-- Project Display starts here -->
-
-    <section id="Explore-project-section">
-      <div class="primary-project">
-        <video controls poster="./legacydocs/videos/PRI PROJECT.jpg">
-          <source src="./legacydocs/videos/tollgate.mp4" />
-        </video>
-      </div>
-      <div class="Explore-text">
-        <h2>Explore</h2>
-        <h4>OUR PROJECTS</h4>
-      </div>
-      <div id="all-project">
-        <div class="project1 pdisplay">
-          <img
-            src="./legacydocs/studentimg/PRI_PROJECT_IMG-removebg-preview.png"
-            alt=""
-            class="projectimg project1img"
-          />
+        <div class="project-text">
+          <h6>
+            Coding and robotics are dynamic learning experiences that teach
+            children problem-solving, critical thinking, and teamwork. These
+            hands-on activities encourage students to become active problem
+            solvers and creative innovators.
+            <span
+              >Through real-world applications, children learn the value of
+              persistence and cooperation, as well as the importance of taking
+              risks and learning from their mistakes.</span
+            >
+          </h6>
         </div>
-        <div class="project2 pdisplay">
-          <img
-            src="./legacydocs/studentimg/SS PROJECT PIX.jpg"
-            alt=""
-            class="projectimg project2img"
-          />
-        </div>
-        <div class="project3 pdisplay">
-          <img
-            src="./legacydocs/studentimg/SS PRO IMG 2.png"
-            alt=""
-            class="projectimg project3img"
-          />
-        </div>
-        <div class="project4 pdisplay">
-          <img
-            src="./legacydocs/studentimg/JSPROJECT-removebg-preview.png"
-            alt=""
-            class="projectimg project4img"
-          />
-        </div>
-      </div>
-      <div class="project-text">
-        <h6>
-          Coding and robotics are dynamic learning experiences that teach
-          children problem-solving, critical thinking, and teamwork. These
-          hands-on activities encourage students to become active problem
-          solvers and creative innovators.
-          <span
-            >Through real-world applications, children learn the value of
-            persistence and cooperation, as well as the importance of taking
-            risks and learning from their mistakes.</span
+      </section>
+      <!-- project display stops here -->
+
+      <!-- OUR GALARY STRUCTURE BEGIN -->
+
+      <section id="gallery">
+        <h1>OUR GALLERY</h1>
+        <div class="vcontainer1 vcaption">
+          <video
+            loop
+            controls
+            class="sproject project"
+            poster="./legacydocs/videos/JS PROJECT POSTER.jpg"
           >
-        </h6>
-      </div>
-    </section>
-    <!-- project display stops here -->
+            <source src="./legacydocs/videos/WastebinEdited.mp4" />
+          </video>
+          <!-- <p class="vcaption1 vcap">Next Term Project for Junior Secondary School</p> -->
+        </div>
+        <div id="galimg">
+          <img src="./legacydocs/studentimg/SSC2.jpg" alt="" class="img1 gal" />
+          <img src="./legacydocs/studentimg/SSC3.png" alt="" class="img2 gal" />
+          <img src="./legacydocs/studentimg/JS1.jpg" alt="" class="img3 gal" />
+          <img src="./legacydocs/studentimg/JS2.jpg" alt="" class="img4 gal" />
+          <img
+            src="./legacydocs/studentimg/pri_img_2-removebg-preview.png"
+            alt=""
+            class="img5 gal"
+          />
+          <img
+            src="./legacydocs/studentimg/PRI_PROJECT_PIX-removebg-preview.png"
+            alt=""
+            class="img6 gal"
+          />
+        </div>
+        <div class="vcontainer2 vcaption">
+          <video
+            controls
+            loop
+            class="jproject project"
+            poster="./legacydocs/videos/SS PROJECT POSTER.jpg"
+          >
+            <source src="" />
+          </video>
+        </div>
+      </section>
 
-    <!-- OUR GALARY STRUCTURE BEGIN -->
+      <!-- FOOTER SECTION LSTART HERE -->
 
-    <section id="gallery">
-      <h1>OUR GALLERY</h1>
-      <div class="vcontainer1 vcaption">
-        <video
-          loop
-          controls
-          class="sproject project"
-          poster="./legacydocs/videos/JS PROJECT POSTER.jpg"
-        >
-          <source src="./legacydocs/videos/WastebinEdited.mp4" />
-        </video>
-        <!-- <p class="vcaption1 vcap">Next Term Project for Junior Secondary School</p> -->
-      </div>
-      <div id="galimg">
-        <img src="./legacydocs/studentimg/SSC2.jpg" alt="" class="img1 gal" />
-        <img src="./legacydocs/studentimg/SSC3.png" alt="" class="img2 gal" />
-        <img src="./legacydocs/studentimg/JS1.jpg" alt="" class="img3 gal" />
-        <img src="./legacydocs/studentimg/JS2.jpg" alt="" class="img4 gal" />
-        <img
-          src="./legacydocs/studentimg/pri_img_2-removebg-preview.png"
-          alt=""
-          class="img5 gal"
-        />
-        <img
-          src="./legacydocs/studentimg/PRI_PROJECT_PIX-removebg-preview.png"
-          alt=""
-          class="img6 gal"
-        />
-      </div>
-      <div class="vcontainer2 vcaption">
-        <video
-          controls
-          loop
-          class="jproject project"
-          poster="./legacydocs/videos/SS PROJECT POSTER.jpg"
-        >
-          <source src="" />
-        </video>
-      </div>
-    </section>
-
-    <!-- FOOTER SECTION LSTART HERE -->
-
-    <section id="footer">
-      <div class="fchild child">
-        <div class="fgchild gchild">
-          <div class="fggchild1 fggchild ggchild psuedochild">
-            <i class="fa fa-mobile" aria-hidden="true"></i>
-            <p>Call Us For Enquiry <br /><span>+2348065519033</span></p>
+      <section id="footer">
+        <div class="fchild child">
+          <div class="fgchild gchild">
+            <div class="fggchild1 fggchild ggchild psuedochild">
+              <i class="fa fa-mobile" aria-hidden="true"></i>
+              <p>Call Us For Enquiry <br /><span>+2348065519033</span></p>
+            </div>
+            <div class="fggchild2 fggchild ggchild psuedochild">
+              <i class="fa fa-at" aria-hidden="true"></i>
+              <p>
+                Message Us For Enquiry <br /><span
+                  >legacyvillaschools25@gmail.com</span
+                >
+              </p>
+            </div>
+            <div class="fggchild3 fggchild ggchild">
+              <i class="fa fa-building-o" aria-hidden="true"></i>
+              <p>
+                Visit Us For Enquiry <br />
+                <span
+                  >10 Ifelodun street, off Nureni Yusuf Drive, <br />
+                  Alagbado, Lagos.</span
+                >
+              </p>
+            </div>
           </div>
-          <div class="fggchild2 fggchild ggchild psuedochild">
-            <i class="fa fa-at" aria-hidden="true"></i>
-            <p>
-              Message Us For Enquiry <br /><span
-                >legacyvillaschools25@gmail.com</span
-              >
-            </p>
-          </div>
-          <div class="fggchild3 fggchild ggchild">
-            <i class="fa fa-building-o" aria-hidden="true"></i>
-            <p>
-              Visit Us For Enquiry <br />
-              <span
-                >10 Ifelodun street, off Nureni Yusuf Drive, <br />
-                Alagbado, Lagos.</span
-              >
-            </p>
+          <div class="sgchild gchild">
+            <div class="sggchild1 sggchild ggchild">
+              <h3>About Us</h3>
+              <p>
+                Our Mission and Vision is to have a <br />
+                total child after school independent
+              </p>
+              <h2>
+                follow Us :
+                <a href=""><i class="fa-brands fa-facebook fa"></i></a>
+                <a href=""><i class="fa-brands fa-instagram fa"></i></a>
+                <a href=""><i class="fa-brands fa-threads fa"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin fa"></i></a>
+              </h2>
+            </div>
+            <div class="sggchild2 sggchild ggchild">
+              <h3>Our Projects</h3>
+              <p>
+                Coding and robotics are hands-on learning <br />
+                methods in which students explore <br />
+                agile solutions
+              </p>
+            </div>
+            <div class="sggchild3 sggchild ggchild">
+              <h3>Our Staffs</h3>
+              <p>
+                Our esteemed class comprises dedicated educators <br />
+                who consistently demonstrate a passion for fostering <br />
+                intellectual curiosity and academic excellence<br />
+                within our student body.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="sgchild gchild">
-          <div class="sggchild1 sggchild ggchild">
-            <h3>About Us</h3>
-            <p>
-              Our Mission and Vision is to have a <br />
-              total child after school independent
-            </p>
-            <h2>
-              follow Us :
-              <a href=""><i class="fa-brands fa-facebook fa"></i></a>
-              <a href=""><i class="fa-brands fa-instagram fa"></i></a>
-              <a href=""><i class="fa-brands fa-threads fa"></i></a>
-              <a href=""><i class="fa-brands fa-linkedin fa"></i></a>
-            </h2>
-          </div>
-          <div class="sggchild2 sggchild ggchild">
-            <h3>Our Projects</h3>
-            <p>
-              Coding and robotics are hands-on learning <br />
-              methods in which students explore <br />
-              agile solutions
-            </p>
-          </div>
-          <div class="sggchild3 sggchild ggchild">
-            <h3>Our Staffs</h3>
-            <p>
-              Our esteemed class comprises dedicated educators <br />
-              who consistently demonstrate a passion for fostering <br />
-              intellectual curiosity and academic excellence<br />
-              within our student body.
-            </p>
-          </div>
+        <div class="schild child">
+          <p>
+            (c) 2024 Legacy Villa High Senior School Official Website Developed
+            by Coding Students
+          </p>
         </div>
-      </div>
-      <div class="schild child">
-        <p>
-          (c) 2024 Legacy Villa High Senior School Official Website Developed by
-          Coding Students
-        </p>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> -->
