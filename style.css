@@ -19,6 +19,15 @@ body {
   overflow-x: hidden;
 }
 
+/* style to set portrait view  */
+#root {
+  width: 100vh;
+  height: 100vw;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
 /*header*/
 
 #headdiv {
