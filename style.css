@@ -6253,7 +6253,7 @@ body {
 
   #staff_container {
     width: 100%;
-    height: 55vh;
+    height: 61vh;
     padding-top: 0px;
     /* background-color: red; */
     margin: 0;
@@ -6283,13 +6283,13 @@ body {
     /* padding: 40px; */
     /* border: 4px solid rgba(54, 63, 140, 100%); */
     position: absolute;
-    top: 100px;
+    top: 70px;
     left: 2%;
   }
 
   .primary-project video {
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
     max-width: 100%;
     /*Ensure image doesn't exceed container width */
     max-height: 100%;
@@ -6300,7 +6300,7 @@ body {
 
   .Explore-text {
     position: absolute;
-    top: 30px;
+    top: 15px;
     left: 30%;
     background-color: rgba(16, 3, 129, 0.5);
     color: white;
@@ -6324,42 +6324,44 @@ body {
 
   #all-project {
     position: relative;
-    width: 30%;
+    width: 40%;
     /* background-color: blue; */
-    height: auto;
+    height: 60%;
     float: right;
     /* z-index: 1000; */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 100px;
+    padding: 20px;
+    right: 20px;
+    top: 15px;
   }
 
   .project1 {
     position: absolute;
-    top: 42%;
-    left: 20%;
+    top: 25%;
+    left: 10%;
     border: 10px solid red;
     z-index: 1;
   }
 
   .project2 {
     position: absolute;
-    top: 67%;
+    top: 52%;
     left: 45%;
     border: 10px solid black;
   }
 
   .project3 {
     position: absolute;
-    top: 69%;
-    left: 1%;
+    top: 60%;
+    left: -20%;
     border: 10px solid blue;
   }
 
   .project4 {
     position: absolute;
-    top: 90%;
+    top: 80%;
     left: 27%;
     border: 10px solid lightpink;
   }
